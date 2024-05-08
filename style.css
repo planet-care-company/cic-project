@@ -27,15 +27,15 @@
     padding: 10px 20px;
     display: flex;
     position: absolute;
-    top: 10%;
+    top: -1%;
 }
 
 .navbar-left {
-    left: 24%;
+    left: -5%;
 }
 
 .navbar-right {
-    right: 24%;
+    right: 30%;
 }
 
 .nav-links {
@@ -44,7 +44,7 @@
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin: 40%;
 }
 
 .nav-links li.logo {
@@ -63,11 +63,20 @@
     font-weight: bold;
 }
 
+.nav-links li:not(.english) a {
+    color: #07344f; /* Change this to the desired color for all links except "English" */
+}
+
+.nav-links .english a {
+    color: rgb(235, 136, 49); /* Change this to the desired color for the "English" link */
+}
+
 .logo img {
     width: 70px;
     height: auto;
     position: absolute;
     left: 48%;
+    top:10%;
 }
 
 

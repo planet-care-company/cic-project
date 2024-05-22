@@ -104,26 +104,21 @@ body {
     color: rgb(235, 136, 49);
 }
 
-
-.logo {
-  position: relative; /* Add relative positioning to the parent container */
-  width: 100%; /* Ensure the container spans the full width */
-  height: 100px; /* Set a height for the container */
-  display: flex; /* Use flexbox to center the child elements */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
 .logo img {
+  margin-top: 15px;
   width: 80px;
   height: auto;
-  /* Remove the absolute positioning and left/top properties */
+  position: relative;
+  left: 47%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .hamburger {
     position: absolute;
-    top: -5px; /* Adjust as needed */
-    right: 10px; /* Position to the right */
+    top: -5px; 
+    right: 10px;
     cursor: pointer;
     z-index: 2;
 }
@@ -365,12 +360,36 @@ p {
 .map1 {
     position: absolute;
     top: 1960px;
-    left: 630px;
-    width: 45%; /* Set the width to 40% of the containing element */
+    left: 650px;
+    width: 45%; 
 }
 
-  
-  
+.world {
+    position: absolute;
+    top: 2000px;
+}
+
+
+h3, .paragraph4 {
+    display: block; 
+    margin: 0; 
+    text-align: left;
+}
+
+.paragraph4 {
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+    line-height: 1.6;  
+    margin-right: 700px;
+    margin-left: 50px;
+}
+
+
+h3 {
+    padding: 15px; 
+    margin-left: 50px;
+}
 
 
 

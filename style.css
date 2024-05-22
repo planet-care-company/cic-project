@@ -201,13 +201,13 @@ body {
 
 .image1 {
     position: absolute;
-    top: 800px;
+    top: 870px;
 }
 
 .Company {
     position: absolute;
     right: 1px;
-    top: 850px;
+    top: 950px;
     width: 50%; 
     margin-left: auto; 
     text-align: center; 
@@ -234,10 +234,6 @@ p {
     margin: 20px;
     padding: 20px;
     line-height: 1.6;  
-}
-
-.section1 {
-    width: 100%;
 }
 
 .container {
@@ -392,7 +388,10 @@ h3 {
 }
   
   
-/* Video Css */
+.section3 {
+    position: absolute;
+    top: 25%;
+}
 
 .hero {
     position: relative;

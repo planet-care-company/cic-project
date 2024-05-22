@@ -482,5 +482,26 @@ video {
     margin-left: 45px;
 }
 
+/* CSS for the Parallax Effect */
+.parallax {
+    /* The image used */
+    background-image: url('Images/cic (5) 1.png');
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Position the container */
+    position: relative;
+    top: 2250px;
+    width: 100%;
+  }
+  
+
 
 

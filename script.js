@@ -23,6 +23,68 @@ function animateValue(obj, start, end, duration) {
     const endValue = parseInt(counter.getAttribute('data-target'));
     animateValue(counter, 0, endValue, 9000); // Duration is 5000ms (5 seconds)
 });
+
+
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  const boxes = document.querySelectorAll(".box");
+  const windowHeight = window.innerHeight;
+
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < windowHeight;
+  }
+
+  // Function to handle box visibility
+  function handleBoxVisibility() {
+    boxes.forEach((box) => {
+      if (isInViewport(box)) {
+        box.classList.add("active");
+      } else {
+        box.classList.remove("active");
+      }
+    });
+  }
+
+  // Initial check on page load
+  handleBoxVisibility();
+
+  // Listen for scroll events
+  window.addEventListener("scroll", handleBoxVisibility);
+});
+
+
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  const boxes = document.querySelectorAll(".box1");
+  const windowHeight = window.innerHeight;
+
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < windowHeight;
+  }
+
+  // Function to handle box visibility
+  function handleBoxVisibility() {
+    boxes.forEach((box) => {
+      if (isInViewport(box)) {
+        box.classList.add("active");
+      } else {
+        box.classList.remove("active");
+      }
+    });
+  }
+
+  // Initial check on page load
+  handleBoxVisibility();
+
+  // Listen for scroll events
+  window.addEventListener("scroll", handleBoxVisibility);
+});
+
+
   
 
 

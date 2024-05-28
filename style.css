@@ -928,6 +928,53 @@ video {
   color: #003152;
 }
 
+.news {
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  top: 5200px;
+  color: #C88219;
+  font-size: 30px;
+  text-decoration: none;
+  transform: translateX(-50%); /* Adjust for centering */
+}
+
+.news::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%; /* Center the line */
+  bottom: -50px;
+  width: 50%; /* Set the width of the line to half of the element's width */
+  height: 7px;
+  background-color: #236080;
+  transform: translateX(-50%); /* Adjust the line to be centered */
+}
+
+.new {
+  font-size: 35px;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 5350px; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  /* Other styles for your .new element */
+}
+
+.ksa {
+  position: absolute;
+  top: 5400px;
+  display: flex;
+  justify-content: center;
+}
+
+.ksa img {
+  width: 40%; /* Each image takes up half of the container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 5%;
+}
+
+
   /* Media Screen*/
 
   /* Extra Small Devices (phones) */

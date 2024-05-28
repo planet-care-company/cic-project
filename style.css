@@ -777,7 +777,7 @@ video {
   border-radius: 32px;
   padding: 3px;
   position: relative;
-  top: 4100px;
+  top: 4000px;
   box-shadow: #604b4a30 0px 70px 30px -50px;
   transition: all 0.5s ease-in-out; 
 }
@@ -791,7 +791,7 @@ video {
 }
 
 .meet .mail svg {
-  stroke: #16348C;
+  stroke: #003152;
   stroke-width: 3px;
 }
 
@@ -807,7 +807,7 @@ video {
   left: 3px;
   border-radius: 29px;
   z-index: 1;
-  border: 0px solid #16348C;
+  border: 0px solid #003152;
   overflow: hidden;
   transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
 }
@@ -838,7 +838,7 @@ video {
   bottom: 3px;
   left: 3px;
   right: 3px;
-  background: #16348C;
+  background: #003152;
   top: 80%;
   border-radius: 29px;
   z-index: 2;
@@ -891,13 +891,13 @@ video {
 }
 
 .meet .bottom3 .bottom-bottom .social-links-container svg:hover {
-  fill: #96d0f9;
+  fill: #003152;
   transform: scale(1.2);
 }
 
 .meet .bottom3 .bottom-bottom .button {
   background: white;
-  color: #16348C;
+  color: #003152;
   border: none;
   border-radius: 20px;
   font-size: 0.6rem;
@@ -906,7 +906,7 @@ video {
 }
 
 .meet .bottom3 .bottom-bottom .button:hover {
-  background: #16348C;
+  background: #003152;
   color: white;
 }
 
@@ -928,7 +928,7 @@ video {
   left: 10px;
   border-radius: 50%;
   z-index: 3;
-  border: 7px solid #16348C;
+  border: 7px solid #003152;
   box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
   transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
 }

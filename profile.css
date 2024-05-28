@@ -1,22 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
 .meet {
+  display: flex;
+  flex-direction: row;
   width: 280px;
   height: 280px;
   background: white;
   border-radius: 32px;
   padding: 3px;
   position: relative;
+  top: 4000px;
   box-shadow: #604b4a30 0px 70px 30px -50px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; 
 }
-
+ 
 .meet .mail {
   position: absolute;
   right: 2rem;
@@ -26,12 +21,12 @@
 }
 
 .meet .mail svg {
-  stroke: #fbb9b6;
+  stroke: #003152;
   stroke-width: 3px;
 }
 
 .meet .mail svg:hover {
-  stroke: #f55d56;
+  stroke: #96d0f9;
 }
 
 .meet .profile-pic {
@@ -42,7 +37,7 @@
   left: 3px;
   border-radius: 29px;
   z-index: 1;
-  border: 0px solid #fbb9b6;
+  border: 0px solid #003152;
   overflow: hidden;
   transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
 }
@@ -68,12 +63,12 @@
   transition: all 0.5s ease-in-out 0s;
 }
 
-.meet .bottom {
+.meet .bottom3 {
   position: absolute;
   bottom: 3px;
   left: 3px;
   right: 3px;
-  background: #fbb9b6;
+  background: #003152;
   top: 80%;
   border-radius: 29px;
   z-index: 2;
@@ -82,29 +77,29 @@
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
-.meet .bottom .content {
+.meet .bottom3 .content3 {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 1.5rem;
   right: 1.5rem;
   height: 160px;
 }
 
-.meet .bottom .content .name {
+.meet .bottom3 .content3 .name {
   display: block;
   font-size: 1.2rem;
   color: white;
   font-weight: bold;
 }
 
-.meet .bottom .content .about-me {
+.meet .bottom3 .content3 .about-me {
   display: block;
   font-size: 0.9rem;
   color: white;
   margin-top: 1rem;
 }
 
-.meet .bottom .bottom-bottom {
+.meet .bottom3 .bottom-bottom {
   position: absolute;
   bottom: 1rem;
   left: 1.5rem;
@@ -114,25 +109,25 @@
   justify-content: space-between;
 }
 
-.meet .bottom .bottom-bottom .social-links-container {
+.meet .bottom3 .bottom-bottom .social-links-container {
   display: flex;
   gap: 1rem;
 }
 
-.meet .bottom .bottom-bottom .social-links-container svg {
+.meet .bottom3 .bottom-bottom .social-links-container svg {
   height: 20px;
   fill: white;
   filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
 }
 
-.meet .bottom .bottom-bottom .social-links-container svg:hover {
-  fill: #f55d56;
+.meet .bottom3 .bottom-bottom .social-links-container svg:hover {
+  fill: #003152;
   transform: scale(1.2);
 }
 
-.meet .bottom .bottom-bottom .button {
+.meet .bottom3 .bottom-bottom .button {
   background: white;
-  color: #fbb9b6;
+  color: #003152;
   border: none;
   border-radius: 20px;
   font-size: 0.6rem;
@@ -140,8 +135,8 @@
   box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
 }
 
-.meet .bottom .bottom-bottom .button:hover {
-  background: #f55d56;
+.meet .bottom3 .bottom-bottom .button:hover {
+  background: #003152;
   color: white;
 }
 
@@ -149,7 +144,7 @@
   border-top-left-radius: 55px;
 }
 
-.meet:hover .bottom {
+.meet:hover .bottom3 {
   top: 20%;
   border-radius: 80px 29px 29px 29px;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
@@ -163,7 +158,7 @@
   left: 10px;
   border-radius: 50%;
   z-index: 3;
-  border: 7px solid #fbb9b6;
+  border: 7px solid #003152;
   box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
   transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
 }

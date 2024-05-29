@@ -3,74 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Planet Care</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Planet Care</title>
+
 </head>
-<body>
-    <div class="banner">
-        <img src="Images/Rectangle 397.png" alt="Banner Image">
-        <div class="banner-text">
-            Celebrate sustainability with Planet Care, an eco-conscious oil and gas company. Get 22% off with code CARE22 →
-        </div>
-    </div>
 
-<nav>
-    <nav class="navbar-left">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="Campaign.html">Campaign</a></li>
-        </ul>
-    </nav>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Space Grotesk", sans-serif;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 35px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    
+    .banner-text {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 11px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .navbar-right, .navbar-left {
+        padding: 10px 20px;
+        display: flex;
+        position: absolute;
+        top: -1%;
+    }
+    
+    .navbar-left {
+        left: -3%;
+    }
+    
+    .navbar-right {
+        right: 32%;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 40%;
+    }
+    
+    .nav-links li a::after {
+        content: '';
+        position: absolute; 
+        bottom: -3px; 
+        left: 0; 
+        width: 0; 
+        height: 2px; 
+        background-color: #07344f; 
+        transition: width 0.3s;
+        border-radius: 5px;
+    }
+    
+    .nav-links li a:hover::after {
+        width: 100%; 
+    }
+    
+    .nav-links li.logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-links li.logo + li {
+        margin-right: 20px;
+    }
+    
+    .nav-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: medium;
+        font-weight: bold;
+        position: relative; 
+    }
+    
+    .nav-links li:not(.english) a {
+        color: #07344f;
+    }
+    
+    .nav-links .english a {
+        color: rgb(235, 136, 49); 
+    }
+    
+    
+    .nav-links li:not(.english) a:hover {
+        color: rgb(235, 136, 49);
+    }
+    
+    .logo img {
+      margin-top: 15px;
+      width: 80px;
+      height: auto;
+      position: relative;
+      left: 47%;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    }
+    
+    .hamburger {
+        position: absolute;
+        top: -5px; 
+        right: 10px;
+        cursor: pointer;
+        z-index: 2;
+    }
+      
+    .hamburger input {
+        display: none;
+    }
+      
+    .hamburger svg {
+        height: 3em;
+        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: fixed; /* Fixed position to stay on the screen */
+        top: -5px;
+        right: 10px; /* Align to the top-right corner of the screen */
+        z-index: 2;
+    }
+      
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+      
+    .line-top-bottom {
+        stroke-dasharray: 12 63;
+    }
+      
+    .hamburger input:checked + svg {
+        transform: rotate(-45deg);
+    }
+      
+    .hamburger input:checked + svg .line-top-bottom {
+        stroke-dasharray: 20 300;
+        stroke-dashoffset: -32.42;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        z-index: 1;
+        transition: right 0.5s ease-in-out;
+    }
+      
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+    }
+      
+    .menu li {
+        margin: 20px 0;
+    }
+      
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+      
+    .hamburger input:checked ~ .menu {
+        right: 0;
+    }
+    
 
-    <div class="logo">
-        <img src="Images/Logo.png" alt="Logo image">
-    </div>
- 
-    <nav class="navbar-right">
-        <ul class="nav-links">
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li class="english"><a href="#">English</a></li>
-        </ul>
-    </nav>
-</nav>
-
+</style>
 <style>
     body {
         font-family: Arial, sans-serif;
         background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
     }
+
+    .container {
+        display: flex;
+        height: 80vh;
+        margin: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-container {
+        background-color: #5487ae;
+        flex: 0.4;
+    }
+
+    .left-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+    }
+
     .contact-form {
-        max-width: 400px;
-        margin: 0 auto;
+        width: 70%;
         padding: 20px;
         background-color: #ffffff;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     .form-group {
         margin-bottom: 20px;
     }
+
     label {
         font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
     }
+
     input[type="text"],
     input[type="email"],
+    input[type="tel"],
     select,
     textarea {
         width: 100%;
         padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+        border: none;
+        border-bottom: 1px solid black;
         font-size: 14px;
     }
+
     select {
         appearance: none;
     }
+
     .message-box {
         resize: vertical;
     }
+
     .submit-button {
         background-color: #007bff;
         color: #ffffff;
@@ -79,38 +286,158 @@
         padding: 10px 20px;
         cursor: pointer;
     }
+
+    .submit-button:hover {
+        background-color: #013964;
+    }
 </style>
-<div class="contact-form">
-    <h2>Contact Us</h2>
-    <form action="submit_form.php" method="post">
-        <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first_name" required>
+
+</head>
+<body>
+
+    <style>
+        .office-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        /* Left container (map) */
+        .map-container {
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        /* Right container (office details) */
+        .details-container {
+            flex: 1;
+        }
+        
+        /* Office details styles */
+        .office-details {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px; 
+        }
+        
+        /* Social links styles */
+        .social-links {
+            margin-top: 20px;
+        }
+        
+    </style>
+
+    <div class="banner">
+        <img src="Images/Rectangle 397.png" alt="Banner Image">
+        <div class="banner-text">
+            Celebrate sustainability with Planet Care, an eco-conscious oil and gas company. Get 22% off with code CARE22 →
         </div>
-        <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last_name" required>
+    </div>
+
+    <nav>
+        <div class="navbar-left">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Campaign.html">Campaign</a></li>
+            </ul>
         </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Logo image">
         </div>
-        <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
+        <div class="navbar-right">
+            <ul class="nav-links">
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li class="english"><a href="#">English</a></li>
+            </ul>
         </div>
-        <div class="form-group">
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject">
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Support">Support</option>
-                <option value="Feedback">Feedback</option>
-            </select>
+    </nav>
+
+    <label class="hamburger">
+        <input type="checkbox">
+        <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+        </svg>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Campaign</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </nav>
+    </label>  
+
+<div class="container">
+    <div class="left-container">
+        <img src="Images/contact-banner.png" alt="banner-post">
+    </div>
+    <div class="right-container">
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Support">Support</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="message-box" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" class="message-box" rows="5"></textarea>
-        </div>
-        <button type="submit" class="submit-button">Send</button>
-    </form>
+    </div>
 </div>
+
+
+<div class="container">
+<div class="office-container">
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.313235755858!2d55.31685331500699!3d25.27686298387085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f595faeee3e95%3A0x3ca8ff5267602d2!2sKing%20Ali%20Obaid%20Bakhit%20in%20Rashid%20Al%20ketbi!5e0!3m2!1sen!2sae!4v1653893736807!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <div class="details-container">
+        <div class="office-details">
+            <p><strong>OUR LOCATION </strong></p>
+            <p>UAE Based Office, King Ali Obaid Bakhit in Rashid Al Ketbi</p>
+            <p>Office 302, Dubai</p>
+            <p><strong>OUR OFFICE TIMINGS</strong></p>
+            <p>Monday - Saturday (7 am to 4 pm)</p>
+            <p>Only Sunday (1 pm to 3 pm)</p>
+        </div>
+        <div class="social-links">
+
+        </div>
+    </div>
+</div>
+</div>
+</section>
+</body>
+</html>

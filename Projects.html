@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Planet Care</title>
+    <title>Planet Care</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .language {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .language ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .language:hover ul {
+            display: block;
+        }
+
+        .language ul li {
+            padding: 5px;
+        }
+
+        .language ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <div class="banner">
@@ -14,24 +46,30 @@
         </div>
     </div>
 
-<nav>
-    <nav class="navbar-left">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="Campaign.html">Campaign</a></li>
-        </ul>
+    <nav>
+        <div class="navbar-left">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Campaign.html">Campaign</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Logo image">
+        </div>
+        <div class="navbar-right">
+            <ul class="nav-links">
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li class="language">English
+                    <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Arabic</a></li>
+                        <li><a href="#">Chinese</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
-
-    <div class="logo">
-        <img src="Images/Logo.png" alt="Logo image">
-    </div>
- 
-    <nav class="navbar-right">
-        <ul class="nav-links">
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li class="english"><a href="#">English</a></li>
-        </ul>
-    </nav>
-</nav>
+</body>
+</html>

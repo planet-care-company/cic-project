@@ -7,6 +7,55 @@
     <link rel="stylesheet" href="Services.css">
 </head>
 <body>
+    <style>
+        /* Language style */
+
+        .nav-links li:not(.language) a {
+            color: #07344f;
+        }
+        
+        .nav-links .language a {
+            color: rgb(235, 136, 49); 
+        }
+        
+        
+        .nav-links li:not(.language) a:hover {
+            color: rgb(235, 136, 49);
+        }
+        
+        .language {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+        }
+        
+        .language ul {
+          display: none;
+          position: absolute;
+          top: 0%;
+          left: 10%; 
+          transform: translateX(-50%);
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+        
+        .language:hover ul {
+          display: block;
+        }
+        
+        .language ul li {
+          padding: 2px;
+        }
+        
+        .language ul li a {
+          text-decoration: none;
+          color: #333;
+        }
+
+
+
+    </style>
     <div class="banner">
         <img src="Images/Rectangle 397.png" alt="Banner Image">
         <div class="banner-text">
@@ -29,7 +78,12 @@
             <ul class="nav-links">
                 <li><a href="Projects.html">Projects</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li class="english"><a href="#">English</a></li>
+                <li class="language">English
+                    <ul>
+                        <li><a href="#">Arabic</a></li>
+                        <li><a href="#">Chinese</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>

@@ -5,38 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planet Care</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .language {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        .language ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #fff;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        .language:hover ul {
-            display: block;
-        }
-
-        .language ul li {
-            padding: 5px;
-        }
-
-        .language ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-    </style>
 </head>
 <body>
     <div class="banner">
@@ -63,7 +31,6 @@
                 <li><a href="Contact.html">Contact</a></li>
                 <li class="language">English
                     <ul>
-                        <li><a href="#">English</a></li>
                         <li><a href="#">Arabic</a></li>
                         <li><a href="#">Chinese</a></li>
                     </ul>
@@ -71,5 +38,23 @@
             </ul>
         </div>
     </nav>
+
+    <label class="hamburger">
+        <input type="checkbox">
+        <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+        </svg>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Campaign</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </nav>
+    </label>  
 </body>
 </html>

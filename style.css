@@ -1157,10 +1157,10 @@ video {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  font-size: 8px; /* Adjusted font size */
+  font-size: 8px; 
   border: 2px solid #fff;
-  border-radius: 15px; /* Slightly smaller border radius */
-  margin-top: 10px; /* Reduced margin */
+  border-radius: 15px; 
+  margin-top: 10px; 
 }
 
 
@@ -1200,13 +1200,13 @@ p {
 .container {
   display: flex;
   flex-direction: column; 
-  justify-content: space-evenly; /* This will distribute space evenly between the cards */
-  align-items: center; /* This will center the cards vertically */
+  justify-content: space-evenly; 
+  align-items: center;
   position: absolute;
   top: 500px;
-  left: 0; /* Add this to ensure the container starts from the left edge */
-  right: 0; /* Add this to ensure the container extends to the right edge */
-  height: 344px; /* Set a height for the container */
+  left: 0; 
+  right: 0;
+  height: 344px;
   background-color:rgba(202, 233, 250, 0.5);
   height:700px;
   width:100%;
@@ -1214,8 +1214,8 @@ p {
 
 .card, .card1, .card2 {
   position: relative;
-  width: 160px; /* Adjusted card width for 320px screen */
-  height: 240px; /* Adjusted card height for 320px screen */
+  width: 160px;
+  height: 240px; 
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
@@ -1266,7 +1266,7 @@ p {
     color: white;
     font-size: 5px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Example: Increase font size for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   }
 
 
@@ -1308,7 +1308,6 @@ p {
     right: 10%;
     
   }
-
 
   
 }

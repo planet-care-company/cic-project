@@ -91,19 +91,51 @@ body {
     font-weight: bold;
     position: relative; 
 }
-
-.nav-links li:not(.english) a {
+ /* Language  */
+.nav-links li:not(.language) a {
     color: #07344f;
 }
 
-.nav-links .english a {
+.nav-links .language a {
     color: rgb(235, 136, 49); 
 }
 
 
-.nav-links li:not(.english) a:hover {
+.nav-links li:not(.language) a:hover {
     color: rgb(235, 136, 49);
 }
+
+.language {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.language ul {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 10%; 
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.language:hover ul {
+  display: block;
+}
+
+.language ul li {
+  padding: 2px;
+}
+
+.language ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Language end */
 
 .logo img {
   margin-top: 15px;

@@ -117,10 +117,11 @@ body {
 }
 
 /* styles.css */
-.image {
+.image img {
   position: absolute;
   top: 25%;
   right: 200px;
+  width: 70%;
 }
 
 

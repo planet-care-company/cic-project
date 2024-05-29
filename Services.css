@@ -116,6 +116,85 @@ body {
   align-items: center; 
 }
 
+.hamburger {
+    position: absolute;
+    top: -5px; 
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+  
+.hamburger input {
+    display: none;
+}
+  
+.hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed; /* Fixed position to stay on the screen */
+    top: -5px;
+    right: 10px; /* Align to the top-right corner of the screen */
+    z-index: 2;
+}
+  
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+  
+.hamburger input:checked + svg {
+    transform: rotate(-45deg);
+}
+  
+.hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    z-index: 1;
+    transition: right 0.5s ease-in-out;
+}
+  
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+}
+  
+.menu li {
+    margin: 20px 0;
+}
+  
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+  
+.hamburger input:checked ~ .menu {
+    right: 0;
+}
+
   
   /* Add this rule to align the image beside the services image */
   .image {
@@ -160,6 +239,71 @@ body {
       text-align: center;
       margin-left: 10%;
   }
+  
+.keys ,.keys1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.keys img {
+    width: 20%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */ 
+    position: relative;
+    top: 430px;
+}
+
+.keys1 img {
+    width: 20%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */ 
+    position: relative;
+    top: 450px;
+}
+
+.keys2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    top: 450px;
+}
+
+.heading1{
+    text-align: center;
+    position: relative;
+    top: 600px;
+    font-size: 30px;
+}
+
+.cards{
+    background-color: #EFF6F7;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 670px;
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 25%;
+    transition: transform 0.3s ease; 
+   
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: translateY(-15px); /* Hover effect to move card up */
+  }
+
+
+.keys img:hover,.keys1 img:hover ,.keys2:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
   
   @media screen and (max-width: 320px){
     .banner{

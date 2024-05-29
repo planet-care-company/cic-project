@@ -1120,4 +1120,39 @@ video {
 
 }
 
-/* Media Screen End*/
+/* Media query for 1280px breakpoint */
+@media (min-width: 1280px) {
+
+  .card, .card1, .card2 {
+      width: 350px;
+      height: 400px;
+  }
+
+  .card span, .card1 span, .card2 span {
+    margin: 10px;
+  }
+
+  .card .content, .card1 .content, .card2 .content {
+      font-size: 3.5em;
+  }
+
+  .image1 {
+    position: relative;
+    width: 90px;
+    height: 320px;
+  }
+
+  .section1{
+    position: relative;
+  }
+
+  
+
+  .map1{
+    padding: 80px;
+    right: 10%;
+    
+  }
+
+  
+}

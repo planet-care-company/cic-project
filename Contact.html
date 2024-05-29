@@ -291,8 +291,44 @@
         background-color: #013964;
     }
 </style>
+
 </head>
 <body>
+
+    <style>
+        .office-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        /* Left container (map) */
+        .map-container {
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        /* Right container (office details) */
+        .details-container {
+            flex: 1;
+        }
+        
+        /* Office details styles */
+        .office-details {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px; 
+        }
+        
+        /* Social links styles */
+        .social-links {
+            margin-top: 20px;
+        }
+        
+    </style>
 
     <div class="banner">
         <img src="Images/Rectangle 397.png" alt="Banner Image">
@@ -338,7 +374,7 @@
             </ul>
         </nav>
     </label>  
-    
+
 <div class="container">
     <div class="left-container">
         <img src="Images/contact-banner.png" alt="banner-post">
@@ -379,5 +415,24 @@
         </div>
     </div>
 </div>
+<div class="office-container">
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.313235755858!2d55.31685331500699!3d25.27686298387085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f595faeee3e95%3A0x3ca8ff5267602d2!2sKing%20Ali%20Obaid%20Bakhit%20in%20Rashid%20Al%20ketbi!5e0!3m2!1sen!2sae!4v1653893736807!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="details-container">
+        <div class="office-details">
+            <p><strong>OUR LOCATION </strong></p>
+            <p>UAE Based Office, King Ali Obaid Bakhit in Rashid Al Ketbi</p>
+            <p>Office 302, Dubai</p>
+            <p><strong>OUR OFFICE TIMINGS</strong></p>
+            <p>Monday - Saturday (7 am to 4 pm)</p>
+            <p>Only Sunday (1 pm to 3 pm)</p>
+        </div>
+        <div class="social-links">
+
+        </div>
+    </div>
+</div>
+</section>
 </body>
 </html>

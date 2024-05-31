@@ -1114,22 +1114,161 @@ video {
 }
 
 
-@media screen and (max-width: 1440px) {
+
+@media (min-width: 1200px) {
+  .section3{
+    position: relative;
+    top: 10px;
+  }
+  
+  .image2 {
+    position: relative;
+    top: 430px;
+    width: 10% ;
+  }
+  
+  .image1 {
+    position: relative;
+    top: 50px;
+    width: 40%;
+  }
+  
+  .image3 {
+    position: relative;
+    top: -40px;
+    left: 985px;
+    width: 10% ;
+  }
+  
+  .parallax{
+  
+   position: relative;
+    top: 990px;
+    width: 100%;
+  }
+  
+  .care {
+    position:relative;
+    top: 100px;
+    left: 200px;
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  
+  
+  .pastel{
+    position: relative;
+    width: 100%;
+    top: 1450px;
+    height: 500px;
+  }
+  
+  .services1 {
+    position:relative;
+    top: 600px; 
+    left: 50%; 
+  }
+  
+  
+  .shine {
+    position: relative;
+    top: 750px;
+    left: 50%;
+  }
+  
+  .blob {
+    position: relative;
+    top: 330px;
+    left: 70px;
+  }
+  
+  .care::after {
+    position: absolute;
+    left: 50%; /* Center the line */
+    width: 10%; /* Set the width of the line to half of the element's width */
+  }
+  
+  .scroll-container, .scroll-container1 {
+    position: absolute;
+    top: 3400px;
+    width: 400px;
+    margin: 50px auto;
+  }
+  
+  .scroll-container1{
+    position: absolute;
+    top: 3400px;
+    width: 400px;
+    margin-left: 50%;
+  }
+
+  .paragraph6{
+    font-size: 11px;
+  }
+
+  .meet{
+    text-align: center;
+    position: relative;
+    top: 1350px; /* Center vertically */
+    font-size: 40px;/* Center horizontally */
+
+  }
+
+  .team{
+    position: relative;  
+    top: 1400px;
+    left: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .news{
+    position: relative;
+    top: 1550px;
+  }
+
+  .new{
+    position: relative;
+    top: 1670px;
+  }
+
+  .ksa{
+    position: relative;
+    top: 1700px;
+
+  }
+
+  .news::after {
+    bottom: -50px;
+    width: 10%; 
+    height: 7px;
+  }
+
+  .read {
+    position: relative;
+    top: 1580px;
+    left: 27%;
+  }
+  
+  .read1 {
+    position: relative;
+    top: 1540px;
+    left: 77%;
+  }
+
+}
+
+@media (min-width: 1440px) {
 
   .section3 {
     position: relative;
     top: 10px;
   }
 
-  .image1 {
-    position: relative;
-    top: 100px;
-    width: 40%;
-  }
-
   .Company {
     position: relative;
-    top: -250px;
+    top: -295px;
     width: 50%;  
   }
 
@@ -1143,17 +1282,30 @@ video {
     line-height: 1.6;  
   }
 
-  .image2{
-    position: relative;
-    top: 1000px ;
-    width: 40%;
-  }
-
   .container {
     position: relative;
-    top: -600px;
+    top: -400px;
     width:100%;
-  
+  }
+
+  .image2{
+    padding: 20px;
+    top: 250px;
+  }
+
+  .image3{
+    padding: 20px;
+    top: -290px;
+    margin-right: 20px;
+  }
+
+  .map1{
+    top: 2300px;
+    width: 50%;
+  }
+  .world{
+    top: 2410px;
+    font-size: 2rem;
   }
   
 }

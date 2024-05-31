@@ -322,3 +322,13 @@ body {
     position: relative;
     top: -2480px;
 }
+
+@media (min-width: 1440px) {
+
+    .heading1{
+        top:-1500px
+    }
+
+    
+}
+  

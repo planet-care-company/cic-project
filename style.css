@@ -3516,7 +3516,7 @@ h3 {
   
   .image2 {
     position: relative;
-    top: 500px;
+    top: 430px;
     width: 10% ;
   }
   
@@ -3528,8 +3528,8 @@ h3 {
   
   .image3 {
     position: relative;
-    top: 10px;
-    left: 970px;
+    top: -40px;
+    left: 985px;
     width: 10% ;
   }
   
@@ -3583,14 +3583,14 @@ h3 {
   
   .scroll-container, .scroll-container1 {
     position: absolute;
-    top: 3350px;
+    top: 3400px;
     width: 400px;
     margin: 50px auto;
   }
   
   .scroll-container1{
     position: absolute;
-    top: 3350px;
+    top: 3400px;
     width: 400px;
     margin-left: 50%;
   }
@@ -3598,6 +3598,56 @@ h3 {
   .paragraph6{
     font-size: 11px;
   }
+
+  .meet{
+    text-align: center;
+    position: relative;
+    top: 1350px; /* Center vertically */
+    font-size: 40px;/* Center horizontally */
+
+  }
+
+  .team{
+    position: relative;  
+    top: 1400px;
+    left: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .news{
+    position: relative;
+    top: 1550px;
+  }
+
+  .new{
+    position: relative;
+    top: 1670px;
+  }
+
+  .ksa{
+    position: relative;
+    top: 1700px;
+
+  }
+
+  .news::after {
+    bottom: -50px;
+    width: 10%; /* Set the width of the line to half of the element's width */
+    height: 7px;
+  }
+
+  .read {
+    position: relative;
+    top: 1580px;
+    left: 27%;
+  }
   
+  .read1 {
+    position: relative;
+    top: 1540px;
+    left: 77%;
+  }
   
 }

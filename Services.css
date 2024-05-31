@@ -298,12 +298,78 @@ body {
 
 .card1:hover, .card2:hover, .card3:hover {
     transform: translateY(-15px); /* Hover effect to move card up */
-  }
+}
 
 
 .keys img:hover,.keys1 img:hover ,.keys2:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+.caterings{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 840px;
+
+}
+
+.catering{
+    position: relative;
+    top: 910px;
+}
+
+.btn{
+    width: 20%;
+    position: relative;
+    top: -200px;
+    left: 200px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    color: rgb(43, 76, 226);
+    border-radius: .5rem;
+    border-bottom: 2px solid rgb(43, 73, 226);
+    border-right: 2px solid rgb(43, 86, 226);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+}
+
+.btn1 {
+    width: 20%;
+    position: relative;
+    top: -200px;
+    left: 600px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    color: rgb(43, 76, 226);
+    border-radius: .5rem;
+    border-bottom: 2px solid rgb(43, 73, 226);
+    border-right: 2px solid rgb(43, 86, 226);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+}
+   
+   .btn:hover , .btn1:hover {
+    border-top: 2px solid rgb(22, 63, 145);
+    border-left: 2px solid rgb(22, 63, 145);
+    border-bottom: 2px solid rgb(73, 108, 196);
+    border-right: 2px solid rgb(73, 108, 196);
+    box-shadow: rgba(46, 65, 240, 0.4) 5px 5px, rgba(104, 46, 240, 0.3) 10px 10px, rgba(46, 104, 240, 0.2) 15px 15px;
+   }
+
   
   @media screen and (max-width: 320px){
     .banner{

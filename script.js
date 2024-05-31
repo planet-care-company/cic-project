@@ -85,11 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 1, // Show all five slides
   spaceBetween: 30,
-  slidesPerGroup: 3,
-  loop: true,
-  loopFillGroupWithBlank: true,
+  slidesPerGroup: 1, // Adjust as needed
+  loop: false, // Disable loop for single slide
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -98,10 +97,16 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1, // Show only one slide on small screens
+    },
+    720: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
 });
-
-
-  
-
-
 

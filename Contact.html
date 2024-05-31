@@ -361,6 +361,69 @@
           }
     </style>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container-2 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .map-info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 20px;
+        }
+        .map-container {
+            flex: 1;
+            position: relative;
+            height: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .info-box {
+            width: 55%;
+            background: #EFF4FF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .info-box h3 {
+            margin-top: 0;
+        }
+        .info-box p {
+            margin: 0;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .search-container input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+
     <div class="banner">
         <img src="Images/Rectangle 397.png" alt="Banner Image">
         <div class="banner-text">
@@ -447,28 +510,31 @@
     </div>
 </div>
 
-
-<div class="container">
-<div class="office-container">
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.313235755858!2d55.31685331500699!3d25.27686298387085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f595faeee3e95%3A0x3ca8ff5267602d2!2sKing%20Ali%20Obaid%20Bakhit%20in%20Rashid%20Al%20ketbi!5e0!3m2!1sen!2sae!4v1653893736807!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<div class="container-2">
+    <h1>FIND OUR OFFICE</h1>
+    <p style="text-align: center;">From seasonal cooling of local operations to powering big projects, our experts help businesses around the world improve production, manage power generation and plan for emergencies.</p>
+    <div class="search-container">
+        <input type="text" placeholder="Search">
     </div>
-
-    <div class="details-container">
-        <div class="office-details">
-            <p><strong>OUR LOCATION </strong></p>
-            <p>UAE Based Office, King Ali Obaid Bakhit in Rashid Al Ketbi</p>
-            <p>Office 302, Dubai</p>
-            <p><strong>OUR OFFICE TIMINGS</strong></p>
-            <p>Monday - Saturday (7 am to 4 pm)</p>
-            <p>Only Sunday (1 pm to 3 pm)</p>
+    <br>
+    <div class="map-info-container">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.313235755858!2d55.31685331500699!3d25.27686298387085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f595faeee3e95%3A0x3ca8ff5267602d2!2sKing%20Ali%20Obaid%20Bakhit%20in%20Rashid%20Al%20ketbi!5e0!3m2!1sen!2sae!4v1653893736807!5m2!1sen!2sae" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="social-links">
-
+        <div class="info-box">
+            <h3>OUR LOCATION</h3>
+            <p>UAE Based Office, King Ali Obaid Bakhit in Rashid Al ketbi Office 302, Dubai</p>
+            <h3>OUR OFFICE TIMINGS</h3>
+            <p>Monday - Saturday (7 am to 4pm)<br>Only Sunday (1pm to 3pm)</p>
+            <h3>OUR SOCIALS</h3>
+            <p>LinkedIn Social Available</p>
         </div>
     </div>
 </div>
-</div>
+
 </section>
+
+
+
 </body>
 </html>

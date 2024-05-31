@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Planet Care</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="Campaign.css">
 </head>
 <body>
+    <style>
+        /* Language style */
+
+        .nav-links li:not(.language) a {
+            color: #07344f;
+        }
+        
+        .nav-links .language a {
+            color: rgb(235, 136, 49); 
+        }
+        
+        
+        .nav-links li:not(.language) a:hover {
+            color: rgb(235, 136, 49);
+        }
+        
+        .language {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+        }
+        
+        .language ul {
+          display: none;
+          position: absolute;
+          top: 0%;
+          left: 10%; 
+          transform: translateX(-50%);
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+        
+        .language:hover ul {
+          display: block;
+        }
+        
+        .language ul li {
+          padding: 2px;
+        }
+        
+        .language ul li a {
+          text-decoration: none;
+          color: #333;
+        }
+
+
+
+    </style>
     <div class="banner">
         <img src="Images/Rectangle 397.png" alt="Banner Image">
         <div class="banner-text">
@@ -38,6 +87,7 @@
             </ul>
         </div>
     </nav>
+
     <label class="hamburger">
         <input type="checkbox">
         <svg viewBox="0 0 32 32">
@@ -55,3 +105,40 @@
             </ul>
         </nav>
     </label>  
+
+    <section class="campaigns">
+        <img src="Images/Rectangle 3869 (2).png" width="100%" alt="">
+        <h2 class="heading1">Our landscaping work and campaigns</h2>
+        <p class="paragraph1">"Your trusted partner in project management, sourcing, assessing, and deploying top-tier talent for the world's most challenging workplaces. Equipped, certified, and ready to go."</p>
+        <div class="section1">
+            <img src="Images/Group 1000001810.png" class="image" alt="">
+            <img src="Images/Group 1000001810 (1).png" class="image1" alt="">
+            <img src="Images/Group 1000001810 (1).png" class="image2" alt="">
+        </div>
+        <div class="section2">
+            <img src="Images/Screenshot 2024-05-28 at 6.16 1.png" class="image3" alt="">
+            <img src="Images/Screenshot 2024-05-28 at 6.13 2.png" class="image4" alt="">
+            <img src="Images/Screenshot 2024-05-28 at 6.12 1.png" class="image5" alt="">
+        </div>
+
+        <div class="section3">
+            <img src="Images/Group 1000001811.png" class="image6" alt="">
+            <img src="Images/Group 1000001812.png" class="image7" alt="">
+            <img src="Images/Group 1000001813.png" class="image8" alt="">
+        </div>
+
+        <div class="section4">
+            <img src="Images/Screenshot 2024-05-28 at 6.15 1.png" class="image9" alt="">
+            <img src="Images/Screenshot 2024-05-28 at 6.28 1.png" class="image10" alt="">
+            <img src="Images/Screenshot 2024-05-28 at 8.12 1.png" class="image11" alt="">
+        </div>
+    </section>
+    
+    <section class="campaign1">
+        <div class="section5"></div>
+        <img src="Images/Group 1000001802.png" class="image12"  width="100%" alt="">
+        <img src="Images/Group 1000001801.png" class="image13" width="100%" alt="">
+    </section>
+ 
+</body>
+</html>

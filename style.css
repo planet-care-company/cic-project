@@ -1113,9 +1113,7 @@ video {
   right: 0;
 }
 
-
-/* Media query for 1280px breakpoint */
-@media (min-width: 1200px) and (max-width:1440px) {
+@media (min-width: 1200px) {
   .section3{
     position: relative;
     top: 10px;
@@ -1241,7 +1239,7 @@ video {
 
   .news::after {
     bottom: -50px;
-    width: 10%; /* Set the width of the line to half of the element's width */
+    width: 10%; 
     height: 7px;
   }
 
@@ -1258,3 +1256,4 @@ video {
   }
 
 }
+

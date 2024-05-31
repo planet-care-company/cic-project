@@ -240,25 +240,27 @@ body {
       margin-left: 10%;
   }
   
-.keys ,.keys1{
+  .keys, .keys1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
-  }
+}
+
 
 .keys img {
     width: 20%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */ 
     position: relative;
     top: 430px;
+    margin: 50px; /* Adjust the value as needed */
 }
 
 .keys1 img {
     width: 20%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */ 
     position: relative;
-    top: 450px;
+    top: 200px;
+    margin: 50px;
 }
 
 .keys2 {
@@ -269,6 +271,7 @@ body {
     height: auto; /* Maintain aspect ratio */
     position: relative;
     top: 450px;
+    margin-left: 50px;
 }
 
 .heading1{
@@ -291,6 +294,7 @@ body {
 .card1,
 .card2,
 .card3 {
+    margin: 50px;
     width: 25%;
     transition: transform 0.3s ease; 
    
@@ -370,324 +374,91 @@ body {
     box-shadow: rgba(46, 65, 240, 0.4) 5px 5px, rgba(104, 46, 240, 0.3) 10px 10px, rgba(46, 104, 240, 0.2) 15px 15px;
    }
 
+
+.image1 {
+    /* The image used */
+    background-image: url('Images/cic (29) 1.png');
   
-  @media screen and (max-width: 320px){
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 8px;
-        position: absolute;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .english{
-        display: none;
-    }
-    
- 
-    .logo img {
-       width: 12%;
-       height: auto;
-       position: absolute;
-       top: 25px; 
-       left: 0;
-    }
+    /* Set a specific height */
+    min-height: 700px;
   
-
-    .services{
-        position: relative;
-        top: 50px;
-        width: 100%;
-    }
-
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-    }  
-
-    .collaboration{
-        position: relative;
-        top: 60px;
-        text-align: center;
-        color: #000000;
-        font-size: 12px;
-        text-decoration: none;
-    }
-
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        width: 20%; /* Set the width of the line to half of the element's width */
-        height: 2px;
-        background-color: #00718A;
-    }
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   
-    .paragraph {
-        font-size: 10px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
+    /* Position the container */
+    position: relative;
+    top: 850px;
+    width: 100%;
+}
 
+.image3{
+    position: relative;
+    top: -265px;
+    width: 340px;
+    left: 58px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image3:hover {
+    transform: scale(1.1); /* Slightly zoom in effect on hover */
 }
 
 
-@media screen and (min-width: 321px) and (max-width: 600px){
-
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 8px;
-        position: absolute;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .english{
-        display: none;
-    }
-    
-     .logo img {
-       width: 11%;
-       height: auto;
-       position: absolute;
-       top: 25px; 
-       left: 0;
-    }
-
-    
-    .services{
-        position: relative;
-        top: 100px;
-        width: 100%;
-    }
-
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-         height: auto;
-    }  
-
-    .key{
-        position: relative;
-        top: 70px;
-    }
-
-    .collaboration{
-        position: relative;
-        top: 60px;
-        text-align: center;
-        color: #000000;
-        font-size: 13px;
-        text-decoration: none;
-    }
-
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        width: 11%; 
-        height: 4px;
-        background-color: #00718A;
-    }
-  
-    .paragraph {
-        font-size: 13px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
-   
+.image2{
+    position: relative;
+    top:260px;
+    height: 500px;
+    width: 400px;
+    left: 30px;
 }
 
-@media screen and (min-width: 601px) and (max-width: 820px) {
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 8px;
-        position: absolute;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .english{
-        display: none;
-    }
-    
-     .logo img {
-       width: 11%;
-       height: auto;
-       position: absolute;
-       top: 25px; 
-       left: 0;
-    }
-
-    
-    .services{
-        position: relative;
-        top: 100px;
-        width: 100%;
-    }
-
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-         height: auto;
-    }  
-
-    .key{
-        position: relative;
-        top: 70px;
-    }
-
-    .collaboration{
-        position: relative;
-        top: 60px;
-        text-align: center;
-        color: #000000;
-        font-size: 13px;
-        text-decoration: none;
-    }
-
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        width: 11%; 
-        height: 4px;
-        background-color: #00718A;
-    }
-  
-    .paragraph {
-        font-size: 13px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
-   
+.heading2{
+    position: relative;
+    top: -850px;
+    font-size: 30px;
+    left: 270px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
-
-@media screen and (min-width: 821px) and (max-width: 997px){
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 11px;
-        position: absolute;
-    }
-
-    .navbar-right, .navbar-left {
-        padding: 10px 20px;
-        display: flex;
-        position: absolute;
-        top: 5%;
-        font-size: 14px;
-    }
-    
-    .navbar-left {
-        left: -3%;
-    }
-    
-    .navbar-right {
-        right: 20%;
-    }
-    
-    .nav-links {
-        list-style: none;
-        display: flex;
-    }
-    
-    .nav-links li {
-        margin: 20%;
-    }
-
-    .services{
-        position: relative;
-        top: 10px;
-        width: 100%;
-    }
-
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-        height: 100%;
-    }  
-
-    .key{
-        position: relative;
-        top: 70px;
-    }
-
-    .collaboration{
-        position: relative;
-        top: 60px;
-        text-align: center;
-        color: #000000;
-        font-size: 30px;
-        text-decoration: none;
-    }
-
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        width: 11%; 
-        height: 4px;
-        background-color: #00718A;
-    }
-  
-    .paragraph {
-        font-size: 20px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
-
+.heading2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 25% ; /* Center the line */
+    bottom: -50px;
+    width: 50%; /* Set the width of the line to half of the element's width */
+    height: 7px;
+    background-color: #C10000;
+    transform: translateX(-50%); /* Adjust the line to be centered */
 }
+
+.paragraph1{
+    font-size: 20px;
+    position: relative;
+    top: -780px;
+    left: 270px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.image4{
+    position: relative;
+    top: -760px;
+    width: 70px;
+    left: 570px;
+}
+
+.image5{
+    position: relative;
+    top: -760px;
+    width: 250px;
+    left: 590px;
+}
+
 
 @media screen and (min-width: 997px) and (max-width: 1200px) {
     .banner{

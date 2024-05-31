@@ -400,7 +400,8 @@ button:active {
 @media (min-width: 1440px) {
 
     .heading1{
-        top:-1500px
+        top:-1510px;
+        padding: 20px;
     }
 
     

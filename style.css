@@ -1308,7 +1308,6 @@ video {
   
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 320px) {
   .banner{
     width: 100%;
@@ -1787,5 +1786,3 @@ video {
     font-size: 12px; /* Adjust the font size */
   }
 }
-=======
->>>>>>> 9490ceb274b1c409ba55b10de0e4eca6a85e69df

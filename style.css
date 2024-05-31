@@ -1257,3 +1257,54 @@ video {
 
 }
 
+@media (min-width: 1440px) {
+
+  .section3 {
+    position: relative;
+    top: 10px;
+  }
+
+  .Company {
+    position: relative;
+    top: -295px;
+    width: 50%;  
+  }
+
+  h2 {
+    font-size: 40px; 
+  }
+
+  p {
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.6;  
+  }
+
+  .container {
+    position: relative;
+    top: -400px;
+    width:100%;
+  }
+
+  .image2{
+    padding: 20px;
+    top: 250px;
+  }
+
+  .image3{
+    padding: 20px;
+    top: -290px;
+    margin-right: 20px;
+  }
+
+  .map1{
+    top: 2300px;
+    width: 50%;
+  }
+  .world{
+    top: 2410px;
+    font-size: 2rem;
+  }
+  
+}
+

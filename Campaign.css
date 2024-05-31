@@ -323,6 +323,7 @@ body {
     top: -2480px;
 }
 
+<<<<<<< HEAD
 @media (min-width:1440){
 
     .heading1{
@@ -330,3 +331,14 @@ body {
 
     }
 }
+=======
+@media (min-width: 1440px) {
+
+    .heading1{
+        top:-1500px
+    }
+
+    
+}
+  
+>>>>>>> cd2157edbe6e731dbc5d917cc55b2d30c9754be4

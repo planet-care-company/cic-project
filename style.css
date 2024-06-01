@@ -1113,6 +1113,24 @@ video {
   right: 0;
 }
 
+
+
+footer {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.container1 {
+  background-color: #75a9ed70;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 900px auto;
+  padding: 10px 0;
+}
+
+
 .footer-section {
   flex: 1 1 200px;
   margin: 10px;
@@ -1123,7 +1141,7 @@ video {
   margin-bottom: 15px;
   font-size: 18px;
   border-bottom: 1px solid white;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 .footer-section p {

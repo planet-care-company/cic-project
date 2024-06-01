@@ -1113,6 +1113,7 @@ video {
   right: 0;
 }
 
+<<<<<<< HEAD
 
 footer {
   padding: 20px 0;
@@ -1129,6 +1130,8 @@ footer {
   padding: 10px 0;
 }
 
+=======
+>>>>>>> 712eac949b920f3badffe46fcdda87020f705fce
 .footer-section {
   flex: 1 1 200px;
   margin: 10px;

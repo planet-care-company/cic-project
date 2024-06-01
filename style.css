@@ -1378,6 +1378,85 @@ footer {
     top: 2410px;
     font-size: 2rem;
   }
+<<<<<<< HEAD
+=======
+
+
+  .numbers{
+    top: 2600px;
+  }
+
+  .parallax{
+  
+    position: relative;
+    top: 390px;
+    width: 100%;
+  }
+
+  .services1{
+    top:30px;
+  }
+
+  .shine{
+    top:130px;
+  }
+
+  .pastel{
+    top: 795px;
+  }
+
+  .blob{
+    top: -297px;
+  }
+  .care{
+    top: -500px;
+  }
+
+  .scroll{
+    top: 390px;
+    margin-left: 200px;
+  }
+  .scroll-container1{
+   top: 3799px;
+  }
+  .team{
+    top: 700px;
+    margin-left: 80px;
+  }
+  .meet{
+    top: 670px;
+    margin-left: -10px;
+  }
+  .news{
+    top: 820px;
+  }
+
+  .new{
+    top: 932px;
+  }
+
+  .ksa{
+    top: 920px;
+  }
+
+  .read1{
+    top: 740px;
+    margin-left: 12px;
+  }
+
+  .read{
+    top: 780px;
+    margin-left: 12px;
+  }
+
+  .container1 {
+    
+    max-width: 1200px;
+    margin: 900px auto;
+    padding: 10px 0;
+  }
+
+>>>>>>> 7d0a9dcaabaa14d08e2ac82879cc84b0d74a560e
   
 }
 

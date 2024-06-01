@@ -417,6 +417,12 @@ button:active {
     transition: box-shadow 0.2s ease-in;
 }
 
+button a{
+    text-decoration: none;
+    color: rgb(0, 16, 88);
+}
+
+
 .button1 {
     position: relative;
     top: -4087px;
@@ -493,11 +499,6 @@ button:active {
     transition: box-shadow 0.2s ease-in;
 }
 
-button a{
-    text-decoration: none;
-    color: rgb(0, 16, 88);
-}
-
 .button1 a{
     text-decoration: none;
     color: rgb(0, 16, 88);
@@ -543,9 +544,43 @@ button a{
 @media (min-width: 1440px) {
 
     .heading1{
-        top:-1510px;
+        top:-1600px;
         padding: 20px;
     }
 
-    
+    .paragraph1{
+        top: -1600px;
+    }
+
+    .section1 {
+        top: -1550px;
+    }
+
+    .image3, .image4, .image5{
+        top: -2170px;
+        left: 170px;
+    }
+
+    .section3{
+        top: -2000px;
+    }
+
+    .image10, .image11{
+        top: -2595px;
+        left: 240px;
+    }
+
+    .image9{
+        top: -2599px;
+    }
+
+    button{
+        top: -5030px;
+        left: 200px;
+        margin: 120px;
+    }
+
+    .button1{
+        top: -4030px;
+    }
 }

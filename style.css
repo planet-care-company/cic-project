@@ -1113,40 +1113,6 @@ video {
   right: 0;
 }
 
-<<<<<<< HEAD
-
-
-
-.container1 {
-  background-color: #75a9ed70;
-  color: white;
-  position: relative;
-=======
-footer {
-  background-color: #023e8a;
-  color: white;
-  padding: 20px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.container10 {
->>>>>>> badeb80755353b28742bb3d40e02b3b85cf2df91
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1200px;
-<<<<<<< HEAD
-  margin: 1000px 100px;
-  padding: 0 20px;
-
-=======
-  margin: 0 auto;
-  padding: 0 20px;
->>>>>>> badeb80755353b28742bb3d40e02b3b85cf2df91
-}
-
 .footer-section {
   flex: 1 1 200px;
   margin: 10px;
@@ -1195,13 +1161,6 @@ footer {
 }
 
 
-
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> badeb80755353b28742bb3d40e02b3b85cf2df91
 @media (min-width: 1200px) {
   .section3{
     position: relative;

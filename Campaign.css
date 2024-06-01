@@ -574,15 +574,36 @@ button a{
         top: -2599px;
     }
 
-    .button1{
-        display: inline;
-        top: -4030px;
-    }
 
     button{
-        top: -5030px;
+        top: -5450px;
         left: 200px;
         margin: 120px;
+        margin-top: 550px;
     }
 
-}
+    .section5 {
+        /* The image used */
+      
+        /* Set a specific height */
+        min-height: 500px;
+      
+        /* Position the container */
+        position: relative;
+        top: -2400px;
+        width: 100%;
+    }
+     
+    .image12{
+        top: -2870px;
+    }
+
+    .image13{
+        top: -2840px;
+    }
+
+    .btn{
+        top: -5008px;
+        left: 545px;
+    }
+} 

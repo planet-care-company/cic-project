@@ -581,6 +581,9 @@ button a{
     }
 
     .button1{
+        display: flex;
+        flex-direction: row;
         top: -4030px;
+
     }
 }

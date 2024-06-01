@@ -1321,6 +1321,13 @@ footer {
     left: 77%;
   }
 
+  .container1 {
+    
+    max-width: 1200px;
+    margin: 1710px auto;
+    padding: 10px 0;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -1371,6 +1378,83 @@ footer {
     top: 2410px;
     font-size: 2rem;
   }
+<<<<<<< HEAD
+
+  .numbers{
+    top: 2700px;
+  }
+
+  .parallax{
+  
+    position: relative;
+    top: 390px;
+    width: 100%;
+  }
+
+  .services1{
+    top:30px;
+  }
+
+  .shine{
+    top:130px;
+  }
+
+  .pastel{
+    top: 795px;
+  }
+
+  .blob{
+    top: -297px;
+  }
+  .care{
+    top: -500px;
+  }
+
+  .scroll{
+    top: 390px;
+    margin-left: 200px;
+  }
+  .scroll-container1{
+   top: 3799px;
+  }
+  .team{
+    top: 700px;
+    margin-left: 80px;
+  }
+  .meet{
+    top: 670px;
+    margin-left: -10px;
+  }
+  .news{
+    top: 820px;
+  }
+
+  .new{
+    top: 932px;
+  }
+
+  .ksa{
+    top: 920px;
+  }
+
+  .read1{
+    top: 740px;
+    margin-left: 12px;
+  }
+
+  .read{
+    top: 780px;
+    margin-left: 12px;
+  }
+
+  .container1 {
+    
+    max-width: 1200px;
+    margin: 900px auto;
+    padding: 10px 0;
+  }
+=======
+>>>>>>> 0716d96a586a65658c5163ac0a54543c11dbaef1
   
 }
 

@@ -161,12 +161,12 @@ body {
 }
   
 .hamburger svg {
-    height: 3em;
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: fixed; /* Fixed position to stay on the screen */
-    top: -5px;
-    right: 10px; /* Align to the top-right corner of the screen */
-    z-index: 2;
+height: 3em;
+transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+position: fixed; /* Fixed position to stay on the screen */
+top: -5px;
+right: 10px; /* Align to the top-right corner of the screen */
+z-index: 2;
 }
   
 .line {
@@ -1242,7 +1242,7 @@ footer {
   
   .blob {
     position: relative;
-    top: 330px;
+    top: 270px;
     left: 70px;
   }
   
@@ -1378,6 +1378,8 @@ footer {
     top: 2410px;
     font-size: 2rem;
   }
+<<<<<<< HEAD
+=======
 
 
   .numbers{
@@ -1454,6 +1456,7 @@ footer {
     padding: 10px 0;
   }
 
+>>>>>>> 7d0a9dcaabaa14d08e2ac82879cc84b0d74a560e
   
 }
 

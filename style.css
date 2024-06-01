@@ -1321,6 +1321,13 @@ footer {
     left: 77%;
   }
 
+  .container1 {
+    
+    max-width: 1200px;
+    margin: 1710px auto;
+    padding: 10px 0;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -1437,6 +1444,13 @@ footer {
   .read{
     top: 780px;
     margin-left: 12px;
+  }
+
+  .container1 {
+    
+    max-width: 1200px;
+    margin: 900px auto;
+    padding: 10px 0;
   }
   
 }

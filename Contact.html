@@ -409,12 +409,31 @@
             flex-direction: column;
             justify-content: center;
         }
+        
         .info-box h3 {
             margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 10px;
         }
+        
         .info-box p {
             margin: 0;
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
         }
+        
+        .info-box p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        
+        .info-box p:last-child {
+            color: #007bff;
+        }
+
         .search-container {
             display: flex;
             justify-content: center;
@@ -525,14 +544,14 @@
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.313235755858!2d55.31685331500699!3d25.27686298387085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f595faeee3e95%3A0x3ca8ff5267602d2!2sKing%20Ali%20Obaid%20Bakhit%20in%20Rashid%20Al%20ketbi!5e0!3m2!1sen!2sae!4v1653893736807!5m2!1sen!2sae" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="info-box">
-            <h3>OUR LOCATION</h3>
-            <p>UAE Based Office, King Ali Obaid Bakhit in Rashid Al ketbi Office 302, Dubai</p>
-            <h3>OUR OFFICE TIMINGS</h3>
-            <p>Monday - Saturday (7 am to 4pm)<br>Only Sunday (1pm to 3pm)</p>
-            <h3>OUR SOCIALS</h3>
-            <p>LinkedIn Social Available</p>
-        </div>
+    <div class="info-box">
+        <h3>OUR LOCATION</h3>
+        <p>UAE Based Office, King Ali Obaid Bakhit in Rashid Al ketbi Office 302, Dubai</p>
+        <h3>OUR OFFICE TIMINGS</h3>
+        <p>Monday - Saturday (7 am to 4pm)<br>Only Sunday (1pm to 3pm)</p>
+       <h3>OUR SOCIALS</h3>
+      <p>LinkedIn Social Available</p>
+   </div>
     </div>
 </div>
 

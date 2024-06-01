@@ -1113,7 +1113,6 @@ video {
   right: 0;
 }
 
-<<<<<<< HEAD
 
 
 footer {
@@ -1179,8 +1178,7 @@ footer {
   background-color: #e63946;
 }
 
-=======
->>>>>>> 96db58c10f2a80724e275962c22ade4c613ba9a8
+
 @media (min-width: 1200px) {
   .section3{
     position: relative;

@@ -1121,17 +1121,17 @@ footer {
 }
 
 .container1 {
-  background-color: #75a9ed70;
+  background-color: #023e8a;
   color: white;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
   margin: 900px auto;
-  padding: 10px 0;
+  padding: 50px;
 }
 
 
 .footer-section {
+  color: white;
   flex: 1 1 200px;
   margin: 10px;
   min-width: 180px;
@@ -1145,6 +1145,7 @@ footer {
 }
 
 .footer-section p {
+  color: white;
   margin: 10px 0;
   font-size: 14px;
 }

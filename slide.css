@@ -22,18 +22,7 @@
 }
 
 /*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--white-color);
-}
 
 a {
   text-decoration: none;
@@ -46,14 +35,14 @@ img {
 }
 
 /*=============== CARD ===============*/
-.container {
+.container11 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.card__container {
+.card__container11 {
   padding-block: 5rem;
 }
 
@@ -114,6 +103,7 @@ img {
 .card__description {
   font-weight: 500;
   margin-bottom: 1.75rem;
+  color: white;
 }
 
 .card__button {

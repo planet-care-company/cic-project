@@ -271,7 +271,7 @@ body {
     height: auto; /* Maintain aspect ratio */
     position: relative;
     top: 450px;
-    margin-left: 50px;
+    margin-left: 500px;
 }
 
 .heading1{
@@ -401,7 +401,7 @@ body {
     left: 58px;
     transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
-
+ 
 .image3:hover {
     transform: scale(1.1); /* Slightly zoom in effect on hover */
 }
@@ -924,6 +924,14 @@ body {
     }
 
 }
+
+
+@media screen and (min-width: 1440px){
+    .keys2{
+        left: 100px;
+    }
+}
+
 
 
 

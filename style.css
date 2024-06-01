@@ -161,12 +161,12 @@ body {
 }
   
 .hamburger svg {
-    height: 3em;
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: fixed; /* Fixed position to stay on the screen */
-    top: -5px;
-    right: 10px; /* Align to the top-right corner of the screen */
-    z-index: 2;
+height: 3em;
+transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+position: fixed; /* Fixed position to stay on the screen */
+top: -5px;
+right: 10px; /* Align to the top-right corner of the screen */
+z-index: 2;
 }
   
 .line {
@@ -1113,8 +1113,6 @@ video {
   right: 0;
 }
 
-<<<<<<< HEAD
-=======
 
 
 footer {
@@ -1181,7 +1179,6 @@ footer {
 }
 
 
->>>>>>> 9ee9ee8ce36a79795cf18f69e56d7d5945cd7f33
 @media (min-width: 1200px) {
   .section3{
     position: relative;

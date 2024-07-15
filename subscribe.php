@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
     $subject = "Subscription Request";
 
     // Send email
-    $to = "aizayy21@gmail.com";
+    $to = "Operations@planetcare.work";
     $headers = "From: $email\r\n";
     mail($to, $subject, $message, $headers);
 }
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['manual_email'])) {
     $subject = "Subscription Request";
 
     // Send email
-    $to = "aizayy21@gmail.com";
+    $to = "Operations@planetcare.work";
     $headers = "From: $email\r\n";
     mail($to, $subject, $message, $headers);
 

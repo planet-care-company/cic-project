@@ -239,7 +239,10 @@ body {
     position: absolute;
     top: 160%;
     text-align: center;
-    margin-left: 13%;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 0 auto; /* Ensure margins don't offset centering */
+    width: 74%; /* Adjust width to fit within smaller screens */
 }
 
 .keys {
@@ -451,7 +454,244 @@ footer {
             position: absolute;
             top: 70px;
         }
+
+        .collaboration {
+            position: absolute;
+            top: 250px;
+            font-size: 13px; /* Smaller font size for very small screens */
+        }
+    
+        .collaboration::after {
+            bottom: -16px; /* Adjust spacing for smaller screens */
+            width: 55%; /* Further reduce the width of the line */
+            height: 4px; /* Reduce the height of the line */
+        }
+
+        .paragraph {
+            font-size: 7px; /* Smaller font size for very small screens */
+            top: 60%; /* Adjust vertical positioning */
+            width: 80%; /* Adjust width to fit within smaller screens */
+        }
+
+        .keys {
+            width: 20%; /* Set the width to 20% */
+            margin: 130px auto 0 auto; /* Move .keys down */
+        }
+        
+        .keys1 {
+            width: 20%; /* Set the width to 20% */
+            margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+        }
+        
+        .keys2 {
+            display: block; /* Make the image behave like a block-level element */
+            margin: 20px auto 0 auto; /* Center the image horizontally */
+            width: 20%; /* Set the width to 20% of the container */
+        }
+
+        .heading1 {
+            margin-top: 50px; /* Adjust top margin for smaller screens */
+        }
+    
+        .features {
+            font-size: 13px; /* Reduce font size for smaller screens */
+        }
+
+        .cards img {
+            width: 50%; /* Make each image take 100% of its container's width */
+        }
+
+        .caterings {
+            font-size: 13px; /* Set the font size to 30px */
+            margin-top: 70px;
+        }
+
+        .btn {
+            width: auto; /* Adjust width to fit content */
+            max-width: 150px; /* Set a maximum width to prevent it from being too wide */
+            top: 310%; /* Adjust as needed for vertical centering */
+            padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
+            font-size: 7px; /* Adjust font size to fit the smaller button */
+            border-radius: 0.25rem; /* Reduce border radius for a smaller button */
+        }
+
+        .image1 {
+            position: absolute;
+            top: 320%;
+            width: 100%;
+        }
+
+        .image2{
+            position: absolute;
+            top:330%;
+            height: 300px;
+            width: 220px;
+            left: 50px;
+        }
+        
+        .image3{
+            position:absolute;
+            top: 328%;
+            width: 200px;
+            left: 60px;
+        }
+
+        .image4 {
+            top: 400%;
+            margin-left: 15%;
+            width: 70%;
+        }
+
+        footer {
+            margin-top: 225%;
+        }
+              
         
 }
+
+/*MEDIA QUERIES FOR MEDIUM SCREENS*/
+@media screen and (min-width:450px) {
+    
+    .banner {
+        height: 50px; /* Adjust height for better proportion */
+    }
+
+    .banner-text {
+        font-size: 8px; /* Further reduced font size for very small screens */
+    }
+
+    .navbar-right, .navbar-left {
+        padding: 5px 10px;
+        position: absolute;
+        top: 12%;
+    }
+
+    .navbar-left, .navbar-right {
+        flex-direction: row; /* Ensure items stay in a row */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    .nav-links li {
+        margin: 0 15px; /* Reduce spacing between items */
+    }
+
+    .nav-links li a {
+        font-size: 8px;
+    }
+
+    .nav-links li .language a{
+        position: absolute;
+        top: 10%;
+    }
+
+    .language{
+        font-size: 8px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .image {
+        position: absolute;
+        top: 100px;
+    }
+
+    .collaboration {
+        position: absolute;
+        top: 350px;
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+
+    .collaboration::after {
+        bottom: -16px; /* Adjust spacing for smaller screens */
+        width: 55%; /* Further reduce the width of the line */
+        height: 4px; /* Reduce the height of the line */
+    }
+
+    .paragraph {
+        font-size: 9px; /* Smaller font size for very small screens */
+        top: 80%; /* Adjust vertical positioning */
+        width: 80%; /* Adjust width to fit within smaller screens */
+    }
+
+    
+    .keys {
+        width: 25%; /* Set the width to 20% */
+        margin: 130px auto 0 auto; /* Move .keys down */
+    }
+    
+    .keys1 {
+        width: 25%; /* Set the width to 20% */
+        margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+    }
+    
+    .keys2 {
+        display: block; /* Make the image behave like a block-level element */
+        margin: 20px auto 0 auto; /* Center the image horizontally */
+        width: 25%; /* Set the width to 20% of the container */
+    }
+
+    .heading1 {
+        margin-top: 50px; /* Adjust top margin for smaller screens */
+    }
+
+    .features {
+        font-size: 17px; /* Reduce font size for smaller screens */
+    }
+
+    .cards img {
+        width: 50%; /* Make each image take 100% of its container's width */
+    }
+
+    .caterings {
+        font-size: 13px; /* Set the font size to 30px */
+        margin-top: 70px;
+    }
+
+    .btn {
+        width: auto; /* Adjust width to fit content */
+        max-width: 150px; /* Set a maximum width to prevent it from being too wide */
+        top: 424%; /* Adjust as needed for vertical centering */
+        padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
+        font-size: 7px; /* Adjust font size to fit the smaller button */
+        border-radius: 0.25rem; /* Reduce border radius for a smaller button */
+    }
+
+    .image1 {
+        position: absolute;
+        top: 440%;
+        width: 100%;
+    }
+
+    .image2{
+        position: absolute;
+        top:450%;
+        height: 300px;
+        width: 220px;
+        left: 120px;
+    }
+    
+    .image3{
+        position:absolute;
+        top: 448%;
+        width: 200px;
+        left: 130px;
+    }
+
+    .image4 {
+        top: 515%;
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    footer {
+        margin-top: 165%;
+    }
+
+  
+}
+    
+    
 
 

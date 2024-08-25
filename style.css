@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
@@ -1115,6 +1115,70 @@ video {
 
 
 
+footer {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.container1 {
+  background-color: #75a9ed70;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 900px auto;
+  padding: 10px 0;
+}
+
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+  min-width: 180px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+}
+
+.footer-section p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer-section i {
+  margin-right: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px;
+  border: none;
+  background-color: #f77f00;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #e63946;
+}
+
+
 @media (min-width: 1200px) {
   .section3{
     position: relative;
@@ -1303,7 +1367,7 @@ video {
   .image3{
     padding: 20px;
     top: -290px;
-    margin-left: 170px;
+    margin-right: 20px;
   }
 
   .map1{
@@ -1314,6 +1378,7 @@ video {
     top: 2410px;
     font-size: 2rem;
   }
+
 
 
   .numbers{
@@ -1389,6 +1454,7 @@ video {
     margin: 900px auto;
     padding: 10px 0;
   }
+
 
   
 }

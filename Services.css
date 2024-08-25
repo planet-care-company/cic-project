@@ -27,9 +27,10 @@ body {
 
 .banner-text {
     position: absolute;
-    top: 70%;
+    top: 50%; /* Center the text vertically */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    white-space: nowrap; /* Prevent the text from breaking into multiple lines */
     color: white;
     font-size: 11px;
     font-weight: bold;
@@ -40,24 +41,29 @@ body {
     padding: 10px 20px;
     display: flex;
     position: absolute;
-    top: -1%;
+    top: 10%;
+    align-items: center;
 }
 
 .navbar-left {
-    left: -3%;
+    left: 0;
+    justify-content: flex-start; /* Ensure items align to the left */
 }
 
 .navbar-right {
-    right: 32%;
+    right: 0;
+    justify-content: flex-end; /* Ensure items align to the right */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li {
-    margin: 40%;
+    margin: 0 60px; /* Add spacing between items */
 }
 
 .nav-links li a::after {
@@ -101,20 +107,18 @@ body {
     color: rgb(235, 136, 49); 
 }
 
-
 .nav-links li:not(.english) a:hover {
     color: rgb(235, 136, 49);
 }
 
 .logo img {
-  margin-top: 15px;
-  width: 80px;
+  margin-top: 10px;
+  width: 60px;
   height: auto;
   position: relative;
-  left: 47%;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: block; 
 }
 
 .hamburger {
@@ -137,7 +141,7 @@ body {
     right: 10px; /* Align to the top-right corner of the screen */
     z-index: 2;
 }
-  
+
 .line {
     fill: none;
     stroke: white;
@@ -196,109 +200,100 @@ body {
     right: 0;
 }
 
-  
-  /* Add this rule to align the image beside the services image */
-  .image {
-      position: absolute;
-      top: 140px;
-      left: 65%;
-      transition: transform 0.3s ease; /* Add a smooth transition effect */
-  }
-  
-  .image:hover {
-      transform: scale(1.1); /* Slightly zoom in effect on hover */
-  }
-  
-  .collaboration {
-      position: absolute;
-      left: 50%; /* Center horizontally */
-      top: 160%;
-      color: #000000;
-      font-size: 30px;
-      text-decoration: none;
-      transform: translateX(-50%); /* Adjust for centering */
-  }
-  
-  
-    
-  .collaboration::after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 50%; /* Center the line */
-      bottom: -50px;
-      width: 50%; /* Set the width of the line to half of the element's width */
-      height: 7px;
-      background-color: #00718A;
-      transform: translateX(-50%); /* Adjust the line to be centered */
-  }
-  
-  .paragraph {
-      font-size: 20px;
-      position: absolute;
-      top: 180%;
-      text-align: center;
-      margin-left: 10%;
-  }
-  
-  .keys, .keys1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.image {
+    position: absolute;
+    top: 120px;
+    left: 65%;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image:hover {
+    transform: scale(1.1); /* Slightly zoom in effect on hover */
 }
 
 
-.keys img {
-    width: 20%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */ 
-    position: relative;
-    top: 430px;
-    margin: 50px; /* Adjust the value as needed */
+.collaboration {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 140%;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+    transform: translateX(-50%); /* Adjust for centering */
 }
 
-.keys1 img {
-    width: 20%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */ 
-    position: relative;
-    top: 200px;
-    margin: 50px;
+
+.collaboration::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%; /* Center the line */
+    bottom: -50px;
+    width: 50%; /* Set the width of the line to half of the element's width */
+    height: 7px;
+    background-color: #00718A;
+    transform: translateX(-50%); /* Adjust the line to be centered */
+}
+
+.paragraph {
+    font-size: 20px;
+    position: absolute;
+    top: 160%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 0 auto; /* Ensure margins don't offset centering */
+    width: 74%; /* Adjust width to fit within smaller screens */
+}
+
+.keys {
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 20%; /* Set the width to 20% */
+    margin: 300px auto 0 auto; /* Move .keys down */
+}
+
+.keys1 {
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 20%; /* Set the width to 20% */
+    margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
 }
 
 .keys2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    position: relative;
-    top: 450px;
-    margin-left: 500px;
+    display: block; /* Make the image behave like a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 20%; /* Set the width to 20% of the container */
 }
 
-.heading1{
-    text-align: center;
-    position: relative;
-    top: 600px;
-    font-size: 30px;
+.heading1 {
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically, if needed */
+    text-align: center; /* Ensure text inside the element is centered */
+    margin-top: 70px;
 }
 
-.cards{
-    background-color: #EFF6F7;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 670px;
+.features {
+    text-align: center; /* Center the text within the h2 element */
+    font-size: 30px; /* Set the font size to 30px */
 }
 
-.card1,
-.card2,
-.card3 {
-    margin: 50px;
-    width: 25%;
-    transition: transform 0.3s ease; 
-   
+.cards {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px; /* Optional padding around the content */
+}
+
+.cards img {
+    width: 100%; /* Make each image take 100% of its container's width */
+    max-width: 300px; /* Optionally set a maximum width for images */
+    margin: 10px; /* Add space around each image */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 .card1:hover, .card2:hover, .card3:hover {
@@ -310,24 +305,19 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.caterings{
-    font-size: 40px;
-    text-align: center;
-    position: relative;
-    top: 840px;
-
-}
-
-.catering{
-    position: relative;
-    top: 910px;
+.caterings {
+    text-align: center; /* Center the text horizontally */
+    font-size: 30px; /* Set the font size to 30px */
+    margin: 0 auto; /* Center the element within its container if it has a width */
+    margin-top: 70px;
 }
 
 .btn{
     width: 20%;
-    position: relative;
-    top: -200px;
-    left: 200px;
+    position: absolute;
+    top: 540%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); 
     padding: 1rem 2rem;
     font-weight: 700;
     background: rgb(255, 255, 255);
@@ -345,29 +335,7 @@ body {
        box-shadow;
 }
 
-.btn1 {
-    width: 20%;
-    position: relative;
-    top: -200px;
-    left: 600px;
-    padding: 1rem 2rem;
-    font-weight: 700;
-    background: rgb(255, 255, 255);
-    color: rgb(43, 76, 226);
-    border-radius: .5rem;
-    border-bottom: 2px solid rgb(43, 73, 226);
-    border-right: 2px solid rgb(43, 86, 226);
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    transition-duration: 1s;
-    transition-property: border-top, 
-       border-left, 
-       border-bottom,
-       border-right,
-       box-shadow;
-}
-   
-   .btn:hover , .btn1:hover {
+.btn:hover  {
     border-top: 2px solid rgb(22, 63, 145);
     border-left: 2px solid rgb(22, 63, 145);
     border-bottom: 2px solid rgb(73, 108, 196);
@@ -392,14 +360,23 @@ body {
     background-size: cover;
   
     /* Position the container */
-    position: relative;
-    top: 850px;
+    position: absolute;
+    top: 570%;
     width: 100%;
 }
 
+
+.image2{
+    position: absolute;
+    top:585%;
+    height: 500px;
+    width: 400px;
+    left: 30px;
+}
+
 .image3{
-    position: relative;
-    top: -265px;
+    position:absolute;
+    top: 581.5%;
     width: 340px;
     left: 58px;
     transition: transform 0.3s ease; /* Add a smooth transition effect */
@@ -409,521 +386,237 @@ body {
     transform: scale(1.1); /* Slightly zoom in effect on hover */
 }
 
-
-.image2{
-    position: relative;
-    top:260px;
-    height: 500px;
-    width: 400px;
-    left: 30px;
-}
-
-.heading2{
-    position: relative;
-    top: -850px;
-    font-size: 30px;
-    left: 270px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-.heading2::after{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 25% ; /* Center the line */
-    bottom: -50px;
-    width: 50%; /* Set the width of the line to half of the element's width */
-    height: 7px;
-    background-color: #C10000;
-    transform: translateX(-50%); /* Adjust the line to be centered */
-}
-
-.paragraph1{
-    font-size: 20px;
-    position: relative;
-    top: -780px;
-    left: 270px;
-    margin-right: 300px;
-    margin-left: 300px;
-}
-
 .image4{
-    position: relative;
-    top: -760px;
-    width: 70px;
-    left: 570px;
+    position: absolute;
+    top: 580%;
+    margin-left: 50%;
+    width: 50%;
 }
 
-.image5{
-    position: relative;
-    top: -760px;
-    width: 250px;
-    left: 590px;
+footer {
+    margin-top: 60.3%;
+    background: #f1f1f1; /* or your desired background color */
+    padding: 20px;
+    text-align: center;
 }
 
-
-@media screen and (min-width: 997px) and (max-width: 1200px) {
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 11px;
-        position: absolute;
-    }
-
-    
-    .services{
-        position: relative;
-        top: 20px;
-        width: 100%;
-    }
-
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-         height: auto;
-    }  
-
-    .key{
-        position: relative;
-        top: 70px;
-    }
-
-    .collaboration{
-        position: relative;
-        top: 30px;
-        text-align: center;
-        color: #000000;
-        font-size: 30px;
-        text-decoration: none;
-    }
-
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -20px;
-        width: 11%; 
-        height: 7px;
-        background-color: #00718A;
-    }
-  
-    .paragraph {
-        font-size: 20px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 11px;
-        position: absolute;
-    }
-
-    
-    .services{
-        position: relative;
-        top: 20px;
-        width: 100%;
-    }
-
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-         height: auto;
-    }  
-
-    .key{
-        position: relative;
-        top: 70px;
-    }
-
-    .collaboration{
-        position: relative;
-        top: 30px;
-        text-align: center;
-        color: #000000;
-        font-size: 30px;
-        text-decoration: none;
-    }
-
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -20px;
-        width: 11%; 
-        height: 7px;
-        background-color: #00718A;
-    }
-  
-    .paragraph {
-        font-size: 20px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
-    
-    .keys img {
-        width: 20%; /* Adjust as needed */
-        height: auto; /* Maintain aspect ratio */ 
-        position: relative;
-        top: 250px;
-    }
-    
-    .keys1 img {
-        width: 20%; /* Adjust as needed */
-        height: auto; /* Maintain aspect ratio */ 
-        position: relative;
-        top: 450px;
-    }
-    
-    .keys2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 20%; /* Adjust as needed */
-        height: auto; /* Maintain aspect ratio */
-        position: relative;
-        top: 450px;
-    }
-
-
-}
-@media screen and (max-width: 320px){
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 8px;
-        position: absolute;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .english{
-        display: none;
-    }
-    
- 
-    .logo img {
-       width: 12%;
-       height: auto;
-       position: absolute;
-       top: 25px; 
-       left: 0;
-    }
-  
-
-    .services{
-        position: relative;
-        top: 50px;
-        width: 100%;
-    }
-
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-    }  
-
-    .collaboration{
-        position: relative;
-        top: 60px;
-        text-align: center;
-        color: #000000;
-        font-size: 12px;
-        text-decoration: none;
-    }
-
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        width: 20%; /* Set the width of the line to half of the element's width */
-        height: 2px;
-        background-color: #00718A;
-    }
-  
-    .paragraph {
-        font-size: 10px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
-
+.footer-section {
+    flex: 1;
+    margin: 10px;
 }
 
+/*MEDIA QURIES FOR SMALL SCREENS*/
+@media screen and (max-width: 320px) {
 
-@media screen and (min-width: 321px) and (max-width: 600px){
-
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 8px;
-        position: absolute;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .english{
-        display: none;
-    }
+        .banner {
+            height: 30px; /* Adjusted height for smaller screen */
+        }
     
-     .logo img {
-       width: 11%;
-       height: auto;
-       position: absolute;
-       top: 25px; 
-       left: 0;
-    }
+        .banner-text {
+            font-size: 5px; /* Further reduced font size for very small screens */
+        }
 
+        .navbar-right, .navbar-left {
+            padding: 5px 10px;
+            position: absolute;
+            top: 7%;
+        }
     
-    .services{
-        position: relative;
-        top: 100px;
-        width: 100%;
-    }
+        .navbar-left, .navbar-right {
+            flex-direction: row; /* Ensure items stay in a row */
+            flex-wrap: nowrap; /* Prevent wrapping */
+        }
+    
+        .nav-links li {
+            margin: 0 10px; /* Reduce spacing between items */
+        }
+    
+        .nav-links li a {
+            font-size: 5px;
+        }
 
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-         height: auto;
-    }  
+        .nav-links li .language a{
+            position: absolute;
+            top: 10%;
+        }
 
-    .key{
-        position: relative;
-        top: 70px;
-    }
+        .language{
+            font-size: 5px;
+        }
+    
+        .logo img {
+            width: 30px;
+        }
 
-    .collaboration{
-        position: relative;
-        top: 60px;
-        text-align: center;
-        color: #000000;
-        font-size: 13px;
-        text-decoration: none;
-    }
+        .image {
+            position: absolute;
+            top: 70px;
+        }
 
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        width: 11%; 
-        height: 4px;
-        background-color: #00718A;
-    }
-  
-    .paragraph {
-        font-size: 13px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
-   
+        .collaboration {
+            position: absolute;
+            top: 250px;
+            font-size: 13px; /* Smaller font size for very small screens */
+        }
+    
+        .collaboration::after {
+            bottom: -16px; /* Adjust spacing for smaller screens */
+            width: 55%; /* Further reduce the width of the line */
+            height: 4px; /* Reduce the height of the line */
+        }
+
+        .paragraph {
+            font-size: 7px; /* Smaller font size for very small screens */
+            top: 60%; /* Adjust vertical positioning */
+            width: 80%; /* Adjust width to fit within smaller screens */
+        }
+
+        .keys {
+            width: 20%; /* Set the width to 20% */
+            margin: 130px auto 0 auto; /* Move .keys down */
+        }
+        
+        .keys1 {
+            width: 20%; /* Set the width to 20% */
+            margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+        }
+        
+        .keys2 {
+            display: block; /* Make the image behave like a block-level element */
+            margin: 20px auto 0 auto; /* Center the image horizontally */
+            width: 20%; /* Set the width to 20% of the container */
+        }
+
+        .heading1 {
+            margin-top: 50px; /* Adjust top margin for smaller screens */
+        }
+    
+        .features {
+            font-size: 13px; /* Reduce font size for smaller screens */
+        }
+
+        .cards img {
+            width: 50%; /* Make each image take 100% of its container's width */
+        }
+
+        .caterings {
+            font-size: 13px; /* Set the font size to 30px */
+            margin-top: 70px;
+        }
+
+        .btn {
+            width: auto; /* Adjust width to fit content */
+            max-width: 150px; /* Set a maximum width to prevent it from being too wide */
+            top: 310%; /* Adjust as needed for vertical centering */
+            padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
+            font-size: 7px; /* Adjust font size to fit the smaller button */
+            border-radius: 0.25rem; /* Reduce border radius for a smaller button */
+        }
+
+        .image1 {
+            position: absolute;
+            top: 320%;
+            width: 100%;
+        }
+
+        .image2{
+            position: absolute;
+            top:330%;
+            height: 300px;
+            width: 220px;
+            left: 50px;
+        }
+        
+        .image3{
+            position:absolute;
+            top: 328%;
+            width: 200px;
+            left: 60px;
+        }
+
+        .image4 {
+            top: 400%;
+            margin-left: 15%;
+            width: 70%;
+        }
+
+        footer {
+            margin-top: 225%;
+        }
+              
+        
 }
 
-@media screen and (min-width: 601px) and (max-width: 820px) {
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 8px;
-        position: absolute;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .english{
-        display: none;
-    }
+/*MEDIA QUERIES FOR MEDIUM SCREENS*/
+@media screen and (min-width:450px) {
     
-     .logo img {
-       width: 11%;
-       height: auto;
-       position: absolute;
-       top: 25px; 
-       left: 0;
+    .banner {
+        height: 50px; /* Adjust height for better proportion */
     }
 
-    
-    .services{
-        position: relative;
-        top: 100px;
-        width: 100%;
-    }
-
-    .image{
-        position: absolute;
-        top: 1px;
-        left: 65%;
-         height: auto;
-    }  
-
-    .key{
-        position: relative;
-        top: 70px;
-    }
-
-    .collaboration{
-        position: relative;
-        top: 60px;
-        text-align: center;
-        color: #000000;
-        font-size: 13px;
-        text-decoration: none;
-    }
-
-    .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        width: 11%; 
-        height: 4px;
-        background-color: #00718A;
-    }
-  
-    .paragraph {
-        font-size: 13px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
-    }
-   
-}
-
-
-@media screen and (min-width: 821px) and (max-width: 997px){
-    .banner{
-        width: 100%;
-    }
-
-    .banner-text{
-        font-size: 11px;
-        position: absolute;
+    .banner-text {
+        font-size: 8px; /* Further reduced font size for very small screens */
     }
 
     .navbar-right, .navbar-left {
-        padding: 10px 20px;
-        display: flex;
+        padding: 5px 10px;
         position: absolute;
-        top: 5%;
-        font-size: 14px;
+        top: 12%;
     }
-    
-    .navbar-left {
-        left: -3%;
+
+    .navbar-left, .navbar-right {
+        flex-direction: row; /* Ensure items stay in a row */
+        flex-wrap: nowrap; /* Prevent wrapping */
     }
-    
-    .navbar-right {
-        right: 20%;
-    }
-    
-    .nav-links {
-        list-style: none;
-        display: flex;
-    }
-    
+
     .nav-links li {
-        margin: 20%;
+        margin: 0 15px; /* Reduce spacing between items */
     }
 
-    .services{
-        position: relative;
-        top: 10px;
-        width: 100%;
+    .nav-links li a {
+        font-size: 8px;
     }
 
-    .image{
+    .nav-links li .language a{
         position: absolute;
-        top: 1px;
-        left: 65%;
-        height: 100%;
-    }  
-
-    .key{
-        position: relative;
-        top: 70px;
+        top: 10%;
     }
 
-    .collaboration{
-        position: relative;
-        top: 60px;
-        text-align: center;
-        color: #000000;
-        font-size: 30px;
-        text-decoration: none;
+    .language{
+        font-size: 8px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .image {
+        position: absolute;
+        top: 100px;
+    }
+
+    .collaboration {
+        position: absolute;
+        top: 350px;
+        font-size: 14px; /* Smaller font size for very small screens */
     }
 
     .collaboration::after {
-        content: '';
-        display: block;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: -10px;
-        width: 11%; 
-        height: 4px;
-        background-color: #00718A;
+        bottom: -16px; /* Adjust spacing for smaller screens */
+        width: 55%; /* Further reduce the width of the line */
+        height: 4px; /* Reduce the height of the line */
     }
-  
+
     .paragraph {
-        font-size: 20px;
-        position: relative;
-        top: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 55px;
-        margin-left: 55px;
+        font-size: 9px; /* Smaller font size for very small screens */
+        top: 80%; /* Adjust vertical positioning */
+        width: 80%; /* Adjust width to fit within smaller screens */
     }
 
 }

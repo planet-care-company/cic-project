@@ -8,6 +8,7 @@
 
 body {
     font-family: "Space Grotesk", sans-serif;
+    overflow: smooth;
 }
 
 .banner {
@@ -374,7 +375,9 @@ body {
     box-shadow: rgba(46, 65, 240, 0.4) 5px 5px, rgba(104, 46, 240, 0.3) 10px 10px, rgba(46, 104, 240, 0.2) 15px 15px;
    }
 
-
+.sucess{
+    height: 40px;
+}
 .image1 {
     /* The image used */
     background-image: url('Images/cic (29) 1.png');
@@ -924,14 +927,5 @@ body {
     }
 
 }
-
-
-@media screen and (min-width: 1440px){
-    .keys2{
-        left: 100px;
-    }
-}
-
-
 
 

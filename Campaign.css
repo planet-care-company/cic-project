@@ -1,108 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@1&family=Kanit:wght@300;400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montagu+Slab:opsz,wght@16..144,500&family=Pixelify+Sans:wght@700&family=Space+Grotesk:wght@300..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@1&family=Inter:wght@100..900&family=Kanit:wght@300;400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montagu+Slab:opsz,wght@16..144,500&family=Pixelify+Sans:wght@700&family=Space+Grotesk:wght@300..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Space Grotesk", sans-serif;
-}
-
+    font-family: "Space Grotesk";
+    
+} 
 .banner {
-    width: 100%;
+    background: url("./Images/Rectangle 397.png" );
     height: 35px;
     overflow: hidden;
     position: relative;
+    padding-top: 10px;
 }
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
 .banner-text {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
     color: white;
     font-size: 11px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-.navbar-right, .navbar-left {
-    padding: 10px 20px;
-    display: flex;
-    position: absolute;
-    top: -1%;
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.navbar-left {
-    left: -3%;
+.navbar-left,.navbar-right{
+  flex: 2;
 }
-
-.navbar-right {
-    right: 32%;
+.logo{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: auto;
 }
-
-.nav-links {
-    list-style: none;
-    display: flex;
+.nav-links{
+  display: flex;
 }
-
-.nav-links li {
-    margin: 40%;
+.nav-links li{
+  list-style: none;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .nav-links li a::after {
-    content: '';
-    position: absolute; 
-    bottom: -3px; 
-    left: 0; 
-    width: 0; 
-    height: 2px; 
-    background-color: #07344f; 
-    transition: width 0.3s;
-    border-radius: 5px;
+  content: '';
+  background-color: #07344f; 
+  transition: width 0.3s;
+  border-radius: 5px;
 }
 
 .nav-links li a:hover::after {
-    width: 100%; 
-}
-
-.nav-links li.logo {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav-links li.logo + li {
-    margin-right: 20px;
+  width: 100%; 
 }
 
 .nav-links li a {
-    color: black;
-    text-decoration: none;
-    font-size: medium;
-    font-weight: bold;
-    position: relative; 
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
 }
- /* Language  */
+
+
+.nav-links li:not(.english) a {
+  color: #07344f;
+}
+
+.nav-links .english a {
+  color: rgb(235, 136, 49); 
+}
+
+.nav-links li:not(.english) a:hover {
+  color: rgb(235, 136, 49);
+}
+
+.logo img {
+  margin-top: 15px;
+  width: 80px;
+  height: auto;
+}
+/* ************************************************* */
+.hamburger {
+  position: absolute;
+  top: -5px; 
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: none;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  height: 3em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed; 
+  top: -5px;
+  right: 10px;
+  z-index: 2;
+}
+
+.line {
+  fill: none;
+  stroke: rgb(246, 243, 243);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  z-index: 1;
+  transition: right 0.5s ease-in-out;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; 
+}
+
+.menu li {
+  margin: 20px 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.hamburger input:checked ~ .menu {
+  right: 0;
+}
+
+/* Language style */
+
 .nav-links li:not(.language) a {
-    color: #07344f;
+color: #07344f;
 }
 
 .nav-links .language a {
-    color: rgb(235, 136, 49); 
+color: rgb(235, 136, 49); 
 }
 
 
 .nav-links li:not(.language) a:hover {
-    color: rgb(235, 136, 49);
+color: rgb(235, 136, 49);
 }
 
 .language {
@@ -114,9 +193,8 @@ body {
 .language ul {
   display: none;
   position: absolute;
-  top: 0%;
-  left: 10%; 
-  transform: translateX(-50%);
+  top: 25px;
+  left: 30%; 
   padding: 0;
   margin: 0;
   list-style: none;
@@ -126,7 +204,7 @@ body {
   display: block;
 }
 
-.language ul li {
+ .language ul li {
   padding: 2px;
 }
 
@@ -135,217 +213,108 @@ body {
   color: #333;
 }
 
-/* Language end */
-
-.logo img {
-  margin-top: 15px;
-  width: 80px;
-  height: auto;
-  position: relative;
-  left: 47%;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+/*################################################################################################  */
+.campaings{
+    background-image:url("Images/Rectangle 3869 (2).png") ;
+    padding: 25px;
 }
-
-.hamburger {
-    position: absolute;
-    top: -5px; 
-    right: 10px;
-    cursor: pointer;
-    z-index: 2;
-}
-  
-.hamburger input {
-    display: none;
-}
-  
-.hamburger svg {
-    height: 3em;
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: fixed; /* Fixed position to stay on the screen */
-    top: -5px;
-    right: 10px; /* Align to the top-right corner of the screen */
-    z-index: 2;
-}
-  
-.line {
-    fill: none;
-    stroke: white;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3;
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-  
-.line-top-bottom {
-    stroke-dasharray: 12 63;
-}
-  
-.hamburger input:checked + svg {
-    transform: rotate(-45deg);
-}
-  
-.hamburger input:checked + svg .line-top-bottom {
-    stroke-dasharray: 20 300;
-    stroke-dashoffset: -32.42;
-}
-
-.menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    z-index: 1;
-    transition: right 0.5s ease-in-out;
-}
-  
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center; 
-}
-  
-.menu li {
-    margin: 20px 0;
-}
-  
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-  
-.hamburger input:checked ~ .menu {
-    right: 0;
-}
-
 
 .section1{
-    justify-content: center;
-    text-align: center;
-    margin: 40px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.section2{
+    
+    position: absolute;
+    top: 10px;
+    width: 100%;
     display: flex;
-    position:relative;
-    top: -1300px;
-
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
 .image, .image1 , .image2{
-    width: 28%;
-}
+width: 28%;
 
-.heading1{
-    position:relative;
-    top:-1370px ;
-    font-size: 40px;
+}
+.upperimages{
+  display: none;
+}
+.heading1,.paragraph1{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+  font-size: 30px;
+  margin-left: 50px;
 }
 
 .paragraph1{
-    position:relative;
-    top:-1350px ;
-    font-size: 20px;
-    margin-right: 300px;
+  font-size: 20px;
 }
-
 
 .image3,.image4,.image5{
-    width: 20%;
-    position: relative;
-    top: -1850px;
-    margin: 40px;
-    left: 130px;
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
-
 .image3:hover , .image4:hover,.image5:hover{
-    transform: scale(1.1); /* Slightly zoom in effect on hover */
+transform: scale(1.1); /* Slightly zoom in effect on hover */
+}
+.section3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section3 img{
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+
 }
 
-
-.section3{
-    justify-content: center;
-    text-align: center;
-    margin: 40px;
-    display: flex;
-    position:relative;
-    top: -1750px;
-
+.lowerimages{
+  display: none;
 }
 
 .image6, .image7 , .image8{
-    width: 28%;
+  width: 28%;
 }
-
- .image10,.image11{
-    width: 20%;
-    position: relative;
-    top: -2300px;
-    margin: 40px;
-    left: 190px;
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+.btns{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-
-.image10:hover, .image11:hover {
-    transform: scale(1.1); /* Slightly zoom in effect on hover */
+.btns button{
+  flex: 1;
+  margin:40px;
+  margin-top: 0;
+  max-width: 200px;
 }
-
 
 .image9{
-    width: 15%;
+  width: 16%;
+  margin: 40px;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+.image10,.image11{
+width: 20%;
+margin: 40px;
+transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+.image6:hover, .image7:hover ,.image8:hover, .image:hover,.image1:hover,.image2:hover{
+transform: scale(1.1); /* Slightly zoom in effect on hover */
+}
+
+
+/* ************************************************************************ */
+.campaing1{
     position: relative;
-    top: -2300px;
-    margin: 40px;
-    left: 170px;
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-
-.image9:hover {
-    transform: scale(1.1); /* Slightly zoom in effect on hover */
+    display: flex;
 }
 
 
-.section5 {
-    /* The image used */
-    background-image: url('Images/glass.png');
-  
-    /* Set a specific height */
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    /* Position the container */
-    position: relative;
-    top: -2100px;
-    width: 100%;
-}
-
-.image12{
-    position: relative;
-    top: -2540px;
-}
-
-.image13{
-    position: relative;
-    top: -2480px;
-}
 
 button {
-    position: relative;
-    top: -4440px;
-    margin: 100px;
-    left: 160px;
     padding: 10px 20px;
     border-radius: 7px;
     border: 1px solid rgb(61, 106, 255);
@@ -361,7 +330,6 @@ button {
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
-  
 button:hover {
     background: rgb(61, 106, 255);
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
@@ -380,10 +348,6 @@ button::before {
     content: '';
     display: block;
     width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
     opacity: 0;
     background: #fff;
     box-shadow: 0 0 50px 30px #fff;
@@ -421,13 +385,19 @@ button a{
     text-decoration: none;
     color: rgb(0, 16, 88);
 }
-
-
-.button1 {
-    position: relative;
-    top: -4087px;
-    margin: 100px;
-    left: 180px;
+.buns{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+.buns button{
+    flex: 1;
+    margin:40px;
+    max-width: 200px;
+    margin-top: 0;
+}
+.button {
     padding: 10px 20px;
     border-radius: 7px;
     border: 1px solid rgb(61, 106, 255);
@@ -444,7 +414,7 @@ button a{
     transition: all 0.2s ease-in;
 }
   
-.button1:hover {
+.button:hover {
     background: rgb(61, 106, 255);
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
     -webkit-transition: all 0.2s ease-out;
@@ -452,20 +422,16 @@ button a{
     transition: all 0.2s ease-out;
 }
   
-.button1:hover::before {
+.button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
   
-.button1::before {
+.button::before {
     content: '';
     display: block;
     width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
     opacity: 0;
     background: #fff;
     box-shadow: 0 0 50px 30px #fff;
@@ -492,118 +458,338 @@ button a{
     }
 }
   
-.button1:active {
+.button:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
 }
 
-.button1 a{
+.button a{
     text-decoration: none;
     color: rgb(0, 16, 88);
 }
+.campaign1{
+  position: relative;
+}
+.contactusbtn {
+  position: absolute;
+  left: 46%;
+  bottom: 105px;
+  background-color: #00BFA6;
+  padding: 14px 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed #00BFA6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .4s;
+  color: #fff;
 
-.btn {
- position: relative;
- top: -3236px;
- left: 480px;
- background-color: #00BFA6;
- padding: 14px 40px;
- color: #fff;
- text-transform: uppercase;
- letter-spacing: 2px;
- cursor: pointer;
- border-radius: 10px;
- border: 2px dashed #00BFA6;
- box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
- transition: .4s;
 }
 
-.btn span:last-child {
- display: none;
+footer {
+    background-color: #023e8a;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
 }
 
-.btn:hover {
- transition: .4s;
- border: 2px dashed #00BFA6;
- background-color: #fff;
- color: #00BFA6;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.btn:active {
- background-color: #87dbd0;
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+    min-width: 180px;
 }
 
-.btn a {
-    text-decoration: none;
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
 }
 
-  
+.footer-section p {
+    margin: 10px 0;
+    font-size: 14px;
+}
 
-@media (min-width: 1440px) {
+.footer-section i {
+    margin-right: 10px;
+}
 
-    .heading1{
-        top:-1600px;
-        padding: 20px;
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: none;
+    background-color: #f77f00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e63946;
+}
+
+
+/* ############################################################################################## */
+@media screen and (min-width:1024px){ 
+    body{
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
-
-    .paragraph1{
-        top: -1600px;
+    .line {
+        
+        stroke: rgb(0, 0, 0);
     }
-
-    .section1 {
-        top: -1550px;
-    }
-
-    .image3, .image4, .image5{
-        top: -2170px;
-        left: 170px;
-    }
-
-    .section3{
-        top: -2000px;
-    }
-
-    .image10, .image11{
-        top: -2595px;
-        left: 240px;
-    }
-
-    .image9{
-        top: -2599px;
-    }
-
-
-    button{
-        top: -5450px;
-        left: 200px;
-        margin: 120px;
-        margin-top: 550px;
-    }
-
-    .section5 {
-        /* The image used */
+    .contactusbtn{
+      left: 46%;
+      bottom: 98px;
       
-        /* Set a specific height */
-        min-height: 500px;
-      
-        /* Position the container */
-        position: relative;
-        top: -2400px;
+    }
+    .buns button{
+      max-width: 250px;
+    }
+    .btns button{
+      max-width: 250px;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1900px;
+        margin: 0 auto;
+        padding: 0 2px;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin: 0 20px;
+        min-width: 100px; /* Ensure that the sections don't collapse too much */
+    }
+
+    .newsletter {
+        flex: 1;  /* Ensure the newsletter section also takes up equal space */
+        margin: 0 2px;
+    }
+
+    .footer-section h3 {
+        font-size: 10px;
+    }
+
+    .footer-section p {
+        font-size: 11px;
+    }
+
+    .newsletter form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newsletter input[type="email"] {
+        padding: 6px;
+        font-size: 9px;
+        margin-bottom: 15px;
         width: 100%;
-    }
-     
-    .image12{
-        top: -2870px;
+        box-sizing: border-box; /* Ensures padding is included in the width calculation */
     }
 
-    .image13{
-        top: -2840px;
+    .newsletter button {
+        padding: 11px 20px;
+        font-size: 11px;
+        background-color: #f77f00;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;  /* Make the button span the full width */
+        box-sizing: border-box;
     }
 
-    .btn{
-        top: -5008px;
-        left: 545px;
+    .newsletter button:hover {
+        background-color: #e63946;
     }
-} 
+
+    .newsletter p {
+        margin-top: 10px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:899px){
+  .contactusbtn{
+    bottom: 60px;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .buns{
+    margin-top: 20px;
+  }
+  .buns button{
+    flex: 1;
+    max-width: 150px;
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .buns .button:nth-child(1){
+    margin-left: 80px;
+  }
+  .buns .button:nth-child(3){
+    margin-right: 80px;
+  }
+  .btns{
+    margin-top: 20px;
+  }
+  .btns button{
+    flex: 1;
+    max-width: 150px;
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .btns button:nth-child(1){
+    margin-left: 80px;
+  }
+  .btns button:nth-child(3){
+    margin-right: 80px;
+  }
+  .footer-container {
+
+    flex-direction: column;
+    align-items:normal;
+    text-align: center;
+}
+
+.footer-section {
+    margin: 10px 0;
+    flex-basis: 100%;
+    
+}
+
+}
+@media screen and (max-width:560px){
+  nav{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .line{
+    stroke: black;
+  }
+  .contactusbtn{
+    bottom: 60px;
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+  .buns{
+    margin-top: 15px;
+  }
+  .buns button{
+    flex: 1;
+    max-width: 150px;
+    min-width: fit-content;
+    margin-top: 0;
+    font-size: 8px;
+  }
+  .buns .button:nth-child(1){
+    margin-left: 80px;
+  }
+  .buns .button:nth-child(3){
+    margin-right: 80px;
+  }
+  .btns{
+    margin-top: 20px;
+  }
+  .btns button{
+    flex: 1;
+    max-width: 150px;
+    min-width: fit-content;
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .btns button:nth-child(1){
+    margin-left: 80px;
+  }
+  .btns button:nth-child(3){
+    margin-right: 80px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-section {
+    margin: 20px 0;
+    flex-basis: 100%;
+}
+
+.newsletter input[type="email"], 
+.newsletter button {
+    width: 100%;
+    max-width: 300px;
+}
+}
+@media screen and (max-width:480px){
+  .section1{
+    flex-direction: column;    
+  }
+  .section1,.btns,.section3,.buns{
+    display: none;
+  }
+  
+  .upperimages,.lowerimages{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .upperimages img, .lowerimages img{
+    width: 60%;
+    height: auto;
+  }
+  .contactusbtn{
+    bottom: 14%;
+  }
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-section {
+    margin: 10px 0;
+    flex-basis: 100%;
+}
+
+.newsletter input[type="email"], 
+.newsletter button {
+    width: 100%;
+    max-width: 560px;
+}
+
+}

@@ -8,6 +8,7 @@
 
 body {
     font-family: "Space Grotesk", sans-serif;
+    overflow: smooth;
 }
 
 .banner {
@@ -340,8 +341,11 @@ body {
     border-bottom: 2px solid rgb(73, 108, 196);
     border-right: 2px solid rgb(73, 108, 196);
     box-shadow: rgba(46, 65, 240, 0.4) 5px 5px, rgba(104, 46, 240, 0.3) 10px 10px, rgba(46, 104, 240, 0.2) 15px 15px;
-}
+   }
 
+.sucess{
+    height: 40px;
+}
 .image1 {
     /* The image used */
     background-image: url('Images/cic (29) 1.png');
@@ -615,6 +619,73 @@ footer {
         width: 80%; /* Adjust width to fit within smaller screens */
     }
 
+}
+<<<<<<< HEAD
+
+@media screen and (min-width:576px) {
+    .banner {
+        height: 50px; /* Adjust height for better proportion */
+    }
+
+    .banner-text {
+        font-size: 10px; /* Further reduced font size for very small screens */
+    }
+
+    .navbar-right, .navbar-left {
+        padding: 5px 10px;
+        position: absolute;
+        top: 12%;
+    }
+
+    .navbar-left, .navbar-right {
+        flex-direction: row; /* Ensure items stay in a row */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    .nav-links li {
+        margin: 0 17px; /* Reduce spacing between items */
+    }
+
+    .nav-links li a {
+        font-size: 12px;
+    }
+
+    .nav-links li .language a{
+        position: absolute;
+        top: 10%;
+    }
+
+    .language{
+        font-size: 12px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .image {
+        position: absolute;
+        top: 100px;
+    }
+
+    .collaboration {
+        position: absolute;
+        top: 400px;
+        font-size: 17px; /* Smaller font size for very small screens */
+    }
+
+    .collaboration::after {
+        bottom: -16px; /* Adjust spacing for smaller screens */
+        width: 55%; /* Further reduce the width of the line */
+        height: 4px; /* Reduce the height of the line */
+    }
+
+    .paragraph {
+        font-size: 11px; /* Smaller font size for very small screens */
+        top: 90%; /* Adjust vertical positioning */
+        width: 80%; /* Adjust width to fit within smaller screens */
+    }
+
     
     .keys {
         width: 25%; /* Set the width to 20% */
@@ -637,7 +708,7 @@ footer {
     }
 
     .features {
-        font-size: 17px; /* Reduce font size for smaller screens */
+        font-size: 20px; /* Reduce font size for smaller screens */
     }
 
     .cards img {
@@ -645,14 +716,14 @@ footer {
     }
 
     .caterings {
-        font-size: 13px; /* Set the font size to 30px */
+        font-size: 17px; /* Set the font size to 30px */
         margin-top: 70px;
     }
 
     .btn {
         width: auto; /* Adjust width to fit content */
         max-width: 150px; /* Set a maximum width to prevent it from being too wide */
-        top: 424%; /* Adjust as needed for vertical centering */
+        top: 520%; /* Adjust as needed for vertical centering */
         padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
         font-size: 7px; /* Adjust font size to fit the smaller button */
         border-radius: 0.25rem; /* Reduce border radius for a smaller button */
@@ -660,38 +731,1327 @@ footer {
 
     .image1 {
         position: absolute;
-        top: 440%;
+        top: 550%;
         width: 100%;
     }
 
     .image2{
         position: absolute;
-        top:450%;
+        top:560%;
         height: 300px;
         width: 220px;
-        left: 120px;
+        left: 170px;
     }
     
     .image3{
         position:absolute;
-        top: 448%;
+        top: 558%;
         width: 200px;
-        left: 130px;
+        left: 180px;
     }
 
     .image4 {
-        top: 515%;
-        margin-left: 15%;
-        width: 70%;
+        top: 622%;
+        margin-left: 25%;
+        width: 60%;
     }
 
     footer {
-        margin-top: 165%;
+        margin-top: 140%;
     }
 
   
 }
+
+@media screen and (min-width:768px) {
+
+    .navbar-right, .navbar-left {
+        padding: 5px 10px;
+        position: absolute;
+        top: 12%;
+    }
+
+    .navbar-left, .navbar-right {
+        flex-direction: row; /* Ensure items stay in a row */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    .nav-links li {
+        margin: 0 26px; /* Reduce spacing between items */
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .nav-links li .language a{
+        position: absolute;
+        top: 10%;
+    }
+
+    .language{
+        font-size: 14px;
+    }
+
+    .collaboration {
+        position: absolute;
+        top: 500px;
+        font-size: 20px; /* Smaller font size for very small screens */
+    }
+
+    .collaboration::after {
+        bottom: -16px; /* Adjust spacing for smaller screens */
+        width: 55%; /* Further reduce the width of the line */
+        height: 4px; /* Reduce the height of the line */
+    }
+
+    .paragraph {
+        font-size: 14px; /* Smaller font size for very small screens */
+        top: 110%; /* Adjust vertical positioning */
+        width: 80%; /* Adjust width to fit within smaller screens */
+    }
+
+    .heading1 {
+        margin-top: 50px; /* Adjust top margin for smaller screens */
+    }
+
+    .features {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    .caterings {
+        font-size: 24px; /* Set the font size to 30px */
+        margin-top: 70px;
+    }
+
+    .btn {
+        width: auto; /* Adjust width to fit content */
+        max-width: 200px; /* Increase the maximum width to make the button larger */
+        top: 536%; /* Adjust as needed for vertical positioning */
+        padding: 1rem 2rem; /* Increase padding for a larger button */
+        font-size: 12px; /* Increase font size for better readability */
+        border-radius: 0.5rem; /* Increase border radius for a more rounded button */
+    }
+
+    .image1 {
+        position: absolute;
+        top: 570%;
+        width: 100%;
+    }
+
+    .image2{
+        position: absolute;
+        top:600%;
+        height: 360px;
+        width: 240px;
+        left: 50px;
+    }
+    
+    .image3{
+        position:absolute;
+        top: 600%;
+        width: 230px;
+        left: 55px;
+    }
+
+    .image4 {
+        top: 600%;
+        margin-left: 50%;
+        width: 50%;
+    }
+
+    footer {
+        margin-top: 105%;
+    }
+    
+}
+
+/*MEDIA SCREENS FOR LARGE DEVICES*/
+@media screen and (min-width:1150px) {
+
+    .banner {
+        width: 100%;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    
+    .banner-text {
+        font-size: 11px;
+    }
+    
+    .navbar-right, .navbar-left {
+        padding: 10px 20px;
+        display: flex;
+        position: absolute;
+        top: 10%;
+        align-items: center;
+    }
+    
+    .navbar-left {
+        left: 0;
+        justify-content: flex-start; /* Ensure items align to the left */
+    }
+    
+    .navbar-right {
+        right: 0;
+        justify-content: flex-end; /* Ensure items align to the right */
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 60px; /* Add spacing between items */
+    }
+    
+    .nav-links li a::after {
+        content: '';
+        position: absolute; 
+        bottom: -3px; 
+        left: 0; 
+        width: 0; 
+        height: 2px; 
+        background-color: #07344f; 
+        transition: width 0.3s;
+        border-radius: 5px;
+    }
+    
+    .nav-links li a:hover::after {
+        width: 100%; 
+    }
+    
+    .nav-links li.logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-links li.logo + li {
+        margin-right: 20px;
+    }
+    
+    .nav-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: medium;
+        font-weight: bold;
+        position: relative; 
+    }
+    
+    .nav-links li:not(.english) a {
+        color: #07344f;
+    }
+    
+    .nav-links .english a {
+        color: rgb(235, 136, 49); 
+    }
+    
+    .nav-links li:not(.english) a:hover {
+        color: rgb(235, 136, 49);
+    }
+    
+    .logo img {
+      margin-top: 10px;
+      width: 60px;
+      height: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block; 
+    }
+    
+    .hamburger {
+        position: absolute;
+        top: -5px; 
+        right: 10px;
+        cursor: pointer;
+        z-index: 2;
+    }
+      
+    .hamburger input {
+        display: none;
+    }
+      
+    .hamburger svg {
+        height: 3em;
+        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: fixed; /* Fixed position to stay on the screen */
+        top: -5px;
+        right: 10px; /* Align to the top-right corner of the screen */
+        z-index: 2;
+    }
+    
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+      
+    .line-top-bottom {
+        stroke-dasharray: 12 63;
+    }
+      
+    .hamburger input:checked + svg {
+        transform: rotate(-45deg);
+    }
+      
+    .hamburger input:checked + svg .line-top-bottom {
+        stroke-dasharray: 20 300;
+        stroke-dashoffset: -32.42;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        z-index: 1;
+        transition: right 0.5s ease-in-out;
+    }
+      
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+    }
+      
+    .menu li {
+        margin: 20px 0;
+    }
+      
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+      
+    .hamburger input:checked ~ .menu {
+        right: 0;
+    }
+    
+    .image {
+        position: absolute;
+        top: 120px;
+        left: 65%;
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+    
+    .image:hover {
+        transform: scale(1.1); /* Slightly zoom in effect on hover */
+    }
     
     
+    .collaboration {
+        position: absolute;
+        left: 50%; /* Center horizontally */
+        top: 130%;
+        color: #000000;
+        font-size: 30px;
+        text-decoration: none;
+        transform: translateX(-50%); /* Adjust for centering */
+    }
+    
+    
+    .collaboration::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%; /* Center the line */
+        bottom: -50px;
+        width: 50%; /* Set the width of the line to half of the element's width */
+        height: 7px;
+        background-color: #00718A;
+        transform: translateX(-50%); /* Adjust the line to be centered */
+    }
+    
+    .paragraph {
+        font-size: 20px;
+        position: absolute;
+        top: 150%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        margin: 0 auto; /* Ensure margins don't offset centering */
+        width: 74%; /* Adjust width to fit within smaller screens */
+    }
+    
+    .keys {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 20%; /* Set the width to 20% */
+        margin: 300px auto 0 auto; /* Move .keys down */
+    }
+    
+    .keys1 {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 20%; /* Set the width to 20% */
+        margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+    }
+    
+    .keys2 {
+        display: block; /* Make the image behave like a block-level element */
+        margin: 0 auto; /* Center the image horizontally */
+        width: 20%; /* Set the width to 20% of the container */
+    }
+    
+    .heading1 {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically, if needed */
+        text-align: center; /* Ensure text inside the element is centered */
+        margin-top: 70px;
+    }
+    
+    .features {
+        text-align: center; /* Center the text within the h2 element */
+        font-size: 30px; /* Set the font size to 30px */
+    }
+    
+    .cards {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center items horizontally */
+        background-color: #f0f0f0; /* Light grey background */
+        padding: 20px; /* Optional padding around the content */
+    }
+    
+    .cards img {
+        width: 100%; /* Make each image take 100% of its container's width */
+        max-width: 300px; /* Optionally set a maximum width for images */
+        margin: 10px; /* Add space around each image */
+        box-sizing: border-box; /* Include padding and border in the width calculation */
+    }
+    
+    .card1:hover, .card2:hover, .card3:hover {
+        transform: translateY(-15px); /* Hover effect to move card up */
+    }
+    
+    
+    .keys img:hover,.keys1 img:hover ,.keys2:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .caterings {
+        text-align: center; /* Center the text horizontally */
+        font-size: 30px; /* Set the font size to 30px */
+        margin: 0 auto; /* Center the element within its container if it has a width */
+        margin-top: 70px;
+    }
+    
+    .btn{
+        width: 20%;
+        position: absolute;
+        top: 520%; /* Centers vertically */
+        left: 50%; /* Centers horizontally */
+        transform: translate(-50%, -50%); 
+        padding: 1rem 2rem;
+        font-weight: 700;
+        background: rgb(255, 255, 255);
+        color: rgb(43, 76, 226);
+        border-radius: .5rem;
+        border-bottom: 2px solid rgb(43, 73, 226);
+        border-right: 2px solid rgb(43, 86, 226);
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        transition-duration: 1s;
+        transition-property: border-top, 
+           border-left, 
+           border-bottom,
+           border-right,
+           box-shadow;
+    }
+    
+    .btn:hover  {
+        border-top: 2px solid rgb(22, 63, 145);
+        border-left: 2px solid rgb(22, 63, 145);
+        border-bottom: 2px solid rgb(73, 108, 196);
+        border-right: 2px solid rgb(73, 108, 196);
+        box-shadow: rgba(46, 65, 240, 0.4) 5px 5px, rgba(104, 46, 240, 0.3) 10px 10px, rgba(46, 104, 240, 0.2) 15px 15px;
+    }
+    
+    .image1 {
+        /* The image used */
+        background-image: url('Images/cic (29) 1.png');
+      
+        /* Set a specific height */
+        min-height: 700px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        /* Position the container */
+        position: absolute;
+        top: 570%;
+        width: 100%;
+    }
+    
+    
+    .image2{
+        position: absolute;
+        top:585%;
+        height: 500px;
+        width: 400px;
+        left: 30px;
+    }
+    
+    .image3{
+        position:absolute;
+        top: 581.5%;
+        width: 340px;
+        left: 58px;
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+     
+    .image3:hover {
+        transform: scale(1.1); /* Slightly zoom in effect on hover */
+    }
+    
+    .image4{
+        position: absolute;
+        top: 580%;
+        margin-left: 50%;
+        width: 50%;
+    }
+    
+    footer {
+        margin-top: 81%;
+        background: #f1f1f1; /* or your desired background color */
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width:1220px) {
+
+    .banner {
+        width: 100%;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    
+    .banner-text {
+        font-size: 11px;
+    }
+    
+    .navbar-right, .navbar-left {
+        padding: 10px 20px;
+        display: flex;
+        position: absolute;
+        top: 10%;
+        align-items: center;
+    }
+    
+    .navbar-left {
+        left: 0;
+        justify-content: flex-start; /* Ensure items align to the left */
+    }
+    
+    .navbar-right {
+        right: 0;
+        justify-content: flex-end; /* Ensure items align to the right */
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 60px; /* Add spacing between items */
+    }
+    
+    .nav-links li a::after {
+        content: '';
+        position: absolute; 
+        bottom: -3px; 
+        left: 0; 
+        width: 0; 
+        height: 2px; 
+        background-color: #07344f; 
+        transition: width 0.3s;
+        border-radius: 5px;
+    }
+    
+    .nav-links li a:hover::after {
+        width: 100%; 
+    }
+    
+    .nav-links li.logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-links li.logo + li {
+        margin-right: 20px;
+    }
+    
+    .nav-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: medium;
+        font-weight: bold;
+        position: relative; 
+    }
+    
+    .nav-links li:not(.english) a {
+        color: #07344f;
+    }
+    
+    .nav-links .english a {
+        color: rgb(235, 136, 49); 
+    }
+    
+    .nav-links li:not(.english) a:hover {
+        color: rgb(235, 136, 49);
+    }
+    
+    .logo img {
+      margin-top: 10px;
+      width: 60px;
+      height: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block; 
+    }
+    
+    .hamburger {
+        position: absolute;
+        top: -5px; 
+        right: 10px;
+        cursor: pointer;
+        z-index: 2;
+    }
+      
+    .hamburger input {
+        display: none;
+    }
+      
+    .hamburger svg {
+        height: 3em;
+        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: fixed; /* Fixed position to stay on the screen */
+        top: -5px;
+        right: 10px; /* Align to the top-right corner of the screen */
+        z-index: 2;
+    }
+    
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+      
+    .line-top-bottom {
+        stroke-dasharray: 12 63;
+    }
+      
+    .hamburger input:checked + svg {
+        transform: rotate(-45deg);
+    }
+      
+    .hamburger input:checked + svg .line-top-bottom {
+        stroke-dasharray: 20 300;
+        stroke-dashoffset: -32.42;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        z-index: 1;
+        transition: right 0.5s ease-in-out;
+    }
+      
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+    }
+      
+    .menu li {
+        margin: 20px 0;
+    }
+      
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+      
+    .hamburger input:checked ~ .menu {
+        right: 0;
+    }
+    
+    .image {
+        position: absolute;
+        top: 120px;
+        left: 65%;
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+    
+    .image:hover {
+        transform: scale(1.1); /* Slightly zoom in effect on hover */
+    }
+    
+    
+    .collaboration {
+        position: absolute;
+        left: 50%; /* Center horizontally */
+        top: 130%;
+        color: #000000;
+        font-size: 30px;
+        text-decoration: none;
+        transform: translateX(-50%); /* Adjust for centering */
+    }
+    
+    
+    .collaboration::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%; /* Center the line */
+        bottom: -50px;
+        width: 50%; /* Set the width of the line to half of the element's width */
+        height: 7px;
+        background-color: #00718A;
+        transform: translateX(-50%); /* Adjust the line to be centered */
+    }
+    
+    .paragraph {
+        font-size: 20px;
+        position: absolute;
+        top: 150%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        margin: 0 auto; /* Ensure margins don't offset centering */
+        width: 74%; /* Adjust width to fit within smaller screens */
+    }
+    
+    .keys {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 20%; /* Set the width to 20% */
+        margin: 300px auto 0 auto; /* Move .keys down */
+    }
+    
+    .keys1 {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 20%; /* Set the width to 20% */
+        margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+    }
+    
+    .keys2 {
+        display: block; /* Make the image behave like a block-level element */
+        margin: 0 auto; /* Center the image horizontally */
+        width: 20%; /* Set the width to 20% of the container */
+    }
+    
+    .heading1 {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically, if needed */
+        text-align: center; /* Ensure text inside the element is centered */
+        margin-top: 70px;
+    }
+    
+    .features {
+        text-align: center; /* Center the text within the h2 element */
+        font-size: 30px; /* Set the font size to 30px */
+    }
+    
+    .cards {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center items horizontally */
+        background-color: #f0f0f0; /* Light grey background */
+        padding: 20px; /* Optional padding around the content */
+    }
+    
+    .cards img {
+        width: 100%; /* Make each image take 100% of its container's width */
+        max-width: 300px; /* Optionally set a maximum width for images */
+        margin: 10px; /* Add space around each image */
+        box-sizing: border-box; /* Include padding and border in the width calculation */
+    }
+    
+    .card1:hover, .card2:hover, .card3:hover {
+        transform: translateY(-15px); /* Hover effect to move card up */
+    }
+    
+    
+    .keys img:hover,.keys1 img:hover ,.keys2:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .caterings {
+        text-align: center; /* Center the text horizontally */
+        font-size: 30px; /* Set the font size to 30px */
+        margin: 0 auto; /* Center the element within its container if it has a width */
+        margin-top: 70px;
+    }
+    
+    .btn{
+        width: 20%;
+        position: absolute;
+        top: 540%; /* Centers vertically */
+        left: 50%; /* Centers horizontally */
+        transform: translate(-50%, -50%); 
+        padding: 1rem 2rem;
+        font-weight: 700;
+        background: rgb(255, 255, 255);
+        color: rgb(43, 76, 226);
+        border-radius: .5rem;
+        border-bottom: 2px solid rgb(43, 73, 226);
+        border-right: 2px solid rgb(43, 86, 226);
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        transition-duration: 1s;
+        transition-property: border-top, 
+           border-left, 
+           border-bottom,
+           border-right,
+           box-shadow;
+    }
+    
+    .btn:hover  {
+        border-top: 2px solid rgb(22, 63, 145);
+        border-left: 2px solid rgb(22, 63, 145);
+        border-bottom: 2px solid rgb(73, 108, 196);
+        border-right: 2px solid rgb(73, 108, 196);
+        box-shadow: rgba(46, 65, 240, 0.4) 5px 5px, rgba(104, 46, 240, 0.3) 10px 10px, rgba(46, 104, 240, 0.2) 15px 15px;
+    }
+    
+    .image1 {
+        /* The image used */
+        background-image: url('Images/cic (29) 1.png');
+      
+        /* Set a specific height */
+        min-height: 700px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        /* Position the container */
+        position: absolute;
+        top: 570%;
+        width: 100%;
+    }
+    
+    
+    .image2{
+        position: absolute;
+        top:585%;
+        height: 500px;
+        width: 400px;
+        left: 30px;
+    }
+    
+    .image3{
+        position:absolute;
+        top: 581.5%;
+        width: 340px;
+        left: 58px;
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+     
+    .image3:hover {
+        transform: scale(1.1); /* Slightly zoom in effect on hover */
+    }
+    
+    .image4{
+        position: absolute;
+        top: 580%;
+        margin-left: 50%;
+        width: 50%;
+    }
+    
+    footer {
+        margin-top: 87%;
+        background: #f1f1f1; /* or your desired background color */
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin: 10px;
+    }
+    
+    
+}
+
+@media screen and (min-width:1440px) {
+
+    .banner {
+        width: 100%;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    
+    .banner-text {
+        font-size: 11px;
+    }
+    
+    .navbar-right, .navbar-left {
+        padding: 10px 20px;
+        display: flex;
+        position: absolute;
+        top: 10%;
+        align-items: center;
+    }
+    
+    .navbar-left {
+        left: 0;
+        justify-content: flex-start; /* Ensure items align to the left */
+    }
+    
+    .navbar-right {
+        right: 0;
+        justify-content: flex-end; /* Ensure items align to the right */
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 60px; /* Add spacing between items */
+    }
+    
+    .nav-links li a::after {
+        content: '';
+        position: absolute; 
+        bottom: -3px; 
+        left: 0; 
+        width: 0; 
+        height: 2px; 
+        background-color: #07344f; 
+        transition: width 0.3s;
+        border-radius: 5px;
+    }
+    
+    .nav-links li a:hover::after {
+        width: 100%; 
+    }
+    
+    .nav-links li.logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-links li.logo + li {
+        margin-right: 20px;
+    }
+    
+    .nav-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: medium;
+        font-weight: bold;
+        position: relative; 
+    }
+    
+    .nav-links li:not(.english) a {
+        color: #07344f;
+    }
+    
+    .nav-links .english a {
+        color: rgb(235, 136, 49); 
+    }
+    
+    .nav-links li:not(.english) a:hover {
+        color: rgb(235, 136, 49);
+    }
+    
+    .logo img {
+      margin-top: 10px;
+      width: 60px;
+      height: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block; 
+    }
+    
+    .hamburger {
+        position: absolute;
+        top: -5px; 
+        right: 10px;
+        cursor: pointer;
+        z-index: 2;
+    }
+      
+    .hamburger input {
+        display: none;
+    }
+      
+    .hamburger svg {
+        height: 3em;
+        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: fixed; /* Fixed position to stay on the screen */
+        top: -5px;
+        right: 10px; /* Align to the top-right corner of the screen */
+        z-index: 2;
+    }
+    
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+      
+    .line-top-bottom {
+        stroke-dasharray: 12 63;
+    }
+      
+    .hamburger input:checked + svg {
+        transform: rotate(-45deg);
+    }
+      
+    .hamburger input:checked + svg .line-top-bottom {
+        stroke-dasharray: 20 300;
+        stroke-dashoffset: -32.42;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        z-index: 1;
+        transition: right 0.5s ease-in-out;
+    }
+      
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+    }
+      
+    .menu li {
+        margin: 20px 0;
+    }
+      
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+      
+    .hamburger input:checked ~ .menu {
+        right: 0;
+    }
+    
+    .image {
+        position: absolute;
+        top: 120px;
+        left: 65%;
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+    
+    .image:hover {
+        transform: scale(1.1); /* Slightly zoom in effect on hover */
+    }
+    
+    
+    .collaboration {
+        position: absolute;
+        left: 50%; /* Center horizontally */
+        top: 130%;
+        color: #000000;
+        font-size: 30px;
+        text-decoration: none;
+        transform: translateX(-50%); /* Adjust for centering */
+    }
+    
+    
+    .collaboration::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%; /* Center the line */
+        bottom: -50px;
+        width: 50%; /* Set the width of the line to half of the element's width */
+        height: 7px;
+        background-color: #00718A;
+        transform: translateX(-50%); /* Adjust the line to be centered */
+    }
+    
+    .paragraph {
+        font-size: 20px;
+        position: absolute;
+        top: 150%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        margin: 0 auto; /* Ensure margins don't offset centering */
+        width: 74%; /* Adjust width to fit within smaller screens */
+    }
+    
+    .keys {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 20%; /* Set the width to 20% */
+        margin: 300px auto 0 auto; /* Move .keys down */
+    }
+    
+    .keys1 {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 20%; /* Set the width to 20% */
+        margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+    }
+    
+    .keys2 {
+        display: block; /* Make the image behave like a block-level element */
+        margin: 0 auto; /* Center the image horizontally */
+        width: 20%; /* Set the width to 20% of the container */
+    }
+    
+    .heading1 {
+        display: flex; /* Enable flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically, if needed */
+        text-align: center; /* Ensure text inside the element is centered */
+        margin-top: 70px;
+    }
+    
+    .features {
+        text-align: center; /* Center the text within the h2 element */
+        font-size: 30px; /* Set the font size to 30px */
+    }
+    
+    .cards {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center items horizontally */
+        background-color: #f0f0f0; /* Light grey background */
+        padding: 20px; /* Optional padding around the content */
+    }
+    
+    .cards img {
+        width: 100%; /* Make each image take 100% of its container's width */
+        max-width: 300px; /* Optionally set a maximum width for images */
+        margin: 10px; /* Add space around each image */
+        box-sizing: border-box; /* Include padding and border in the width calculation */
+    }
+    
+    .card1:hover, .card2:hover, .card3:hover {
+        transform: translateY(-15px); /* Hover effect to move card up */
+    }
+    
+    
+    .keys img:hover,.keys1 img:hover ,.keys2:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .caterings {
+        text-align: center; /* Center the text horizontally */
+        font-size: 30px; /* Set the font size to 30px */
+        margin: 0 auto; /* Center the element within its container if it has a width */
+        margin-top: 70px;
+    }
+    
+    .btn{
+        width: 20%;
+        position: absolute;
+        top: 540%; /* Centers vertically */
+        left: 50%; /* Centers horizontally */
+        transform: translate(-50%, -50%); 
+        padding: 1rem 2rem;
+        font-weight: 700;
+        background: rgb(255, 255, 255);
+        color: rgb(43, 76, 226);
+        border-radius: .5rem;
+        border-bottom: 2px solid rgb(43, 73, 226);
+        border-right: 2px solid rgb(43, 86, 226);
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        transition-duration: 1s;
+        transition-property: border-top, 
+           border-left, 
+           border-bottom,
+           border-right,
+           box-shadow;
+    }
+    
+    .btn:hover  {
+        border-top: 2px solid rgb(22, 63, 145);
+        border-left: 2px solid rgb(22, 63, 145);
+        border-bottom: 2px solid rgb(73, 108, 196);
+        border-right: 2px solid rgb(73, 108, 196);
+        box-shadow: rgba(46, 65, 240, 0.4) 5px 5px, rgba(104, 46, 240, 0.3) 10px 10px, rgba(46, 104, 240, 0.2) 15px 15px;
+    }
+    
+    .image1 {
+        /* The image used */
+        background-image: url('Images/cic (29) 1.png');
+      
+        /* Set a specific height */
+        min-height: 700px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        /* Position the container */
+        position: absolute;
+        top: 570%;
+        width: 100%;
+    }
+    
+    
+    .image2{
+        position: absolute;
+        top:585%;
+        height: 500px;
+        width: 400px;
+        left: 30px;
+    }
+    
+    .image3{
+        position:absolute;
+        top: 581.5%;
+        width: 340px;
+        left: 58px;
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+     
+    .image3:hover {
+        transform: scale(1.1); /* Slightly zoom in effect on hover */
+    }
+    
+    .image4{
+        position: absolute;
+        top: 580%;
+        margin-left: 50%;
+        width: 50%;
+    }
+    
+    footer {
+        margin-top: 87%;
+        background: #f1f1f1; /* or your desired background color */
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin: 10px;
+    }
+    
+    
+}
+
+
+    
+    
+
+
+
+
+
+
+    
+    
+=======
+>>>>>>> cbd6642103f0018447502374492ed78a8d046754
 
 

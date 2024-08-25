@@ -7,226 +7,135 @@
     <link rel="stylesheet" href="Campaign.css">
 </head>
 <body>
-    <style>
-        /* Language style */
-
-        .nav-links li:not(.language) a {
-            color: #07344f;
-        }
-        
-        .nav-links .language a {
-            color: rgb(235, 136, 49); 
-        }
-        
-        
-        .nav-links li:not(.language) a:hover {
-            color: rgb(235, 136, 49);
-        }
-        
-        .language {
-          position: relative;
-          display: inline-block;
-          cursor: pointer;
-        }
-        
-        .language ul {
-          display: none;
-          position: absolute;
-          top: 0%;
-          left: 10%; 
-          transform: translateX(-50%);
-          padding: 0;
-          margin: 0;
-          list-style: none;
-        }
-        
-        .language:hover ul {
-          display: block;
-        }
-        
-        .language ul li {
-          padding: 2px;
-        }
-        
-        .language ul li a {
-          text-decoration: none;
-          color: #333;
-        }
-
-
-
-    </style>
-    <div class="banner">
-        <img src="Images/Rectangle 397.png" alt="Banner Image">
-        <div class="banner-text">
-            Celebrate sustainability with Planet Care, an eco-conscious oil and gas company. Get 22% off with code CARE22 →
-        </div>
-    </div>
-
-    <nav>
-        <div class="navbar-left">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Campaign.html">Campaign</a></li>
-            </ul>
-        </div>
-        <div class="logo">
-            <img src="Images/Logo.png" alt="Logo image">
-        </div>
-        <div class="navbar-right">
-            <ul class="nav-links">
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li class="language">English
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/campaing2.css">
+    </head>
+    <body>
+        <div class="banner">
+            
+            <div class="banner-text">
+                Celebrate sustainability with Planet Care, an eco-conscious oil and gas company. Get 22% off with code CARE22 →
+            </div>
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+                <nav class="menu">
                     <ul>
-                        <li><a href="#">Arabic</a></li>
-                        <li><a href="#">Chinese</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Campaign</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
                     </ul>
-                </li>
-            </ul>
+                </nav>
+            </label>
         </div>
-    </nav>
-
-    <label class="hamburger">
-        <input type="checkbox">
-        <svg viewBox="0 0 32 32">
-            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-            <path class="line" d="M7 16 27 16"></path>
-        </svg>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Campaign</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">English</a></li>
-            </ul>
+    
+        <nav>
+            <div class="navbar-left">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Campaign.html">Campaign</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="Images/Logo.png" alt="Logo image">
+            </div>
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li class="language"><a  href="#">English
+                        <ul>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Chinese</a></li>
+                        </ul>
+                    </a></li>
+                </ul>
+            </div>
         </nav>
-    </label>  
-
-    <section class="campaigns">
-        <img src="Images/Rectangle 3869 (2).png" width="100%" alt="">
-        <h2 class="heading1">Our landscaping work and campaigns</h2>
-        <p class="paragraph1">"Your trusted partner in project management, sourcing, assessing, and deploying top-tier talent for the world's most challenging workplaces. Equipped, certified, and ready to go."</p>
-        <div class="section1">
-            <img src="Images/Group 1000001810.png" class="image" alt="">
-            <img src="Images/Group 1000001810 (1).png" class="image1" alt="">
-            <img src="Images/Group 1000001810 (1).png" class="image2" alt="">
-        </div>
-        <div class="section2">
-            <img src="Images/Screenshot 2024-05-28 at 6.16 1.png" class="image3" alt="">
-            <img src="Images/Screenshot 2024-05-28 at 6.13 2.png" class="image4" alt="">
-            <img src="Images/Screenshot 2024-05-28 at 6.12 1.png" class="image5" alt="">
-        </div>
-
-        <div class="section3">
-            <img src="Images/Group 1000001811.png" class="image6" alt="">
-            <img src="Images/Group 1000001812.png" class="image7" alt="">
-            <img src="Images/Group 1000001810 (2).png" class="image8" alt="">
-        </div>
-
-        <div class="section4">
-            <img src="Images/Screenshot 2024-05-28 at 6.15 1.png" class="image9" alt="">
-            <img src="Images/Screenshot 2024-05-28 at 6.28 1.png" class="image10" alt="">
-            <img src="Images/Screenshot 2024-05-28 at 8.12 1.png" class="image11" alt="">
-        </div>
-    </section>
     
-    <section class="campaign1">
-        <div class="section5"></div>
-        <img src="Images/Group 1000001802.png" class="image12"  width="100%" alt="">
-        <img src="Images/Group 1000001801.png" class="image13" width="100%" alt="">
-    </section>
+           
     
-    <section class="section6">
-    <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
-    <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
-    <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
-
-    <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
-    <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
-    <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
-    </section>
-
-    <button class="btn"><a href="Contact.html">Contact Us</a></button>
-
- 
-<style>
-    footer {
-        background-color: #023e8a;
-        color: white;
-        padding: 20px 0;
-        width: 100%;
-    }
+        <section class="campaigns">
+            
+            <h2 class="heading1">Our landscaping work and campaigns</h2>
+            <p class="paragraph1">"Your trusted partner in project management, sourcing, assessing, and deploying top-tier talent for the world's most challenging workplaces. Equipped, certified, and ready to go."</p>
+            <div class="section1">
+                    <img src="Images/iraqhesc.png" class="image" alt="">
+                    <img src="Images/piping.jpg" class="image1" alt="">
+                    <img src="Images/piping2.jpg" class="image2" alt="">
+            </div>
+            <div class="btns">
+                <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
+                <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
+                <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
+            </div>
+            <div class="upperimages">
+                <img src="Images/iraqhesc.png" class="image" alt="">
+                <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
     
-    .footer-container {
-        display: flex;
-        justify-content: space-around;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
+                <img src="Images/piping.jpg" class="image1" alt="">
+                <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
     
-    .footer-section {
-        flex: 1 1 200px;
-        margin: 10px;
-        min-width: 180px;
-    }
+                <img src="Images/piping2.jpg" class="image2" alt="">
+                <button><a href="https://www.linkedin.com/in/tahir-mehmood-296a3636/">Join Now</a></button>
     
-    .footer-section h3 {
-        margin-bottom: 15px;
-        font-size: 18px;
-        border-bottom: 1px solid white;
-        padding-bottom: 10px;
-    }
+            </div>
     
-    .footer-section p {
-        margin: 10px 0;
-        font-size: 14px;
-    }
+            
     
-    .footer-section i {
-        margin-right: 10px;
-    }
+        
+            <div class="section3">
+                <img src="Images/southkoera.jpg" class="image6" alt="">
+                <img src="Images/kas1.jpg" class="image7" alt="">
+                <img src="Images/iraq1.jpg" class="image8" alt="">
+                
+            </div>
+            <div class="buns">
+                <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
+                <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
+                <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
+            </div>
+            <div class="lowerimages">
+                <img src="Images/southkoera.jpg" class="image6" alt="">
+                <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
     
-    .newsletter form {
-        display: flex;
-        flex-direction: column;
-    }
+                <img src="Images/kas1.jpg" class="image7" alt="">
+                <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
     
-    .newsletter input[type="email"] {
-        padding: 10px;
-        border: none;
-        margin-bottom: 10px;
-        border-radius: 5px;
-    }
+                <img src="Images/iraq1.jpg" class="image8" alt="">
+                <button class="button"><a href="https://www.linkedin.com/company/planet-care/posts/?feedView=all">Join Now</a></button>
+            </div>
     
-    .newsletter button {
-        padding: 10px;
-        border: none;
-        background-color: #f77f00;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+            
+        </section>
+        
+        <section class="campaign1">
+            <img src="Images/Group 1000001802.png" class="image12"  width="100%" alt="">
+            <img src="Images/conttt.png" class="image13" width="100%" alt="">
+            
+            <button class="contactusbtn"><a href="Contact.html">Contact Us</a></button>
+        </section>
     
-    .newsletter button:hover {
-        background-color: #e63946;
-    }
-  
-  
-  </style>
-
-          <!-- Footer -->
-          <footer>
+        <!-- Footer -->
+        <footer>
             <div class="footer-container">
                 <div class="footer-section">
                     <h3>Reach us</h3>
-                    <p><i class="fas fa-phone"></i> +1012 3456 789</p>
+                    <p><i class="fas fa-phone"></i> 00923005193633</p>
                     <p><i class="fas fa-envelope"></i> theplanetcare@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
+                    <p><i class="fas fa-map-marker-alt"></i> UAE Office: King Ali Obaid Bakhit in Rashid Al Ketbi - Deira - Port Said, Office 302, Dubai, AE</p>
                 </div>
                 <div class="footer-section">
                     <h3>Company</h3>
@@ -247,16 +156,23 @@
                     <p>Services</p>
                     <p>Forum</p>
                 </div>
+                
                 <div class="footer-section newsletter">
                     <h3>Join Our Newsletter</h3>
                     <form action="https://formspree.io/f/xkndljpg" method="POST">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" value="theplanetcare@gmail.com" required>
+                        <input type="email" id="email" name="email" value="Operation@planetcare.work" required>
                         <button type="submit">Subscribe</button>
                     </form>
                     <p>* Will send you weekly updates for your better tool management.</p>
                 </div>
+                
+                
+                
             </div>
         </footer>
-</body>
-</html>
+        
+    
+        
+    </body>
+    </html>

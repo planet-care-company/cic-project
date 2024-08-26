@@ -408,162 +408,20 @@ footer {
 }
 
 /*MEDIA QURIES FOR SMALL SCREENS*/
-@media screen and (max-width:320px) {
-    
-.banner {
-    height: 30px; /* Adjusted height for smaller screen */
-}
+@media screen and (max-width: 320px) {
 
-.banner-text {
-    font-size: 5px; /* Further reduced font size for very small screens */
-}
-
-.navbar-right, .navbar-left {
-    padding: 5px 10px;
-    position: absolute;
-    top: 7%;
-}
-
-.navbar-left, .navbar-right {
-    flex-direction: row; /* Ensure items stay in a row */
-    flex-wrap: nowrap; /* Prevent wrapping */
-}
-
-.nav-links li {
-    margin: 0 10px; /* Reduce spacing between items */
-}
-
-.nav-links li a {
-    font-size: 5px;
-}
-
-.nav-links li .language a{
-    position: absolute;
-    top: 10%;
-}
-
-.language{
-    font-size: 5px;
-}
-
-.logo img {
-    width: 30px;
-}
-
-.image {
-    position: absolute;
-    top: 70px;
-}
-
-.collaboration {
-    position: absolute;
-    top: 250px;
-    font-size: 13px; /* Smaller font size for very small screens */
-}
-
-.collaboration::after {
-    bottom: -16px; /* Adjust spacing for smaller screens */
-    width: 55%; /* Further reduce the width of the line */
-    height: 4px; /* Reduce the height of the line */
-}
-
-.paragraph {
-    font-size: 7px; /* Smaller font size for very small screens */
-    top: 60%; /* Adjust vertical positioning */
-    width: 80%; /* Adjust width to fit within smaller screens */
-}
-
-.keys {
-    width: 20%; /* Set the width to 20% */
-    margin: 130px auto 0 auto; /* Move .keys down */
-}
-
-.keys1 {
-    width: 20%; /* Set the width to 20% */
-    margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
-}
-
-.keys2 {
-    display: block; /* Make the image behave like a block-level element */
-    margin: 20px auto 0 auto; /* Center the image horizontally */
-    width: 20%; /* Set the width to 20% of the container */
-}
-
-.heading1 {
-    margin-top: 50px; /* Adjust top margin for smaller screens */
-}
-
-.features {
-    font-size: 13px; /* Reduce font size for smaller screens */
-}
-
-.cards img {
-    width: 50%; /* Make each image take 100% of its container's width */
-}
-
-.caterings {
-    font-size: 13px; /* Set the font size to 30px */
-    margin-top: 70px;
-}
-
-.btn {
-    width: auto; /* Adjust width to fit content */
-    max-width: 150px; /* Set a maximum width to prevent it from being too wide */
-    top: 310%; /* Adjust as needed for vertical centering */
-    padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
-    font-size: 7px; /* Adjust font size to fit the smaller button */
-    border-radius: 0.25rem; /* Reduce border radius for a smaller button */
-}
-
-.image1 {
-    position: absolute;
-    top: 320%;
-    width: 100%;
-}
-
-.image2{
-    position: absolute;
-    top:330%;
-    height: 300px;
-    width: 220px;
-    left: 50px;
-}
-
-.image3{
-    position:absolute;
-    top: 328%;
-    width: 200px;
-    left: 60px;
-}
-
-.image4 {
-    top: 400%;
-    margin-left: 15%;
-    width: 70%;
-}
-
-footer {
-    margin-top: 225%;
-}
-      
-}
-
-
-/*MEDIA QUERIES FOR MEDIUM SCREENS*/
-@media screen and (min-width:450px) {
-    
     .banner {
-        height: 50px; /* Adjust height for better proportion */
+        height: 30px; /* Adjusted height for smaller screen */
     }
 
     .banner-text {
-        font-size: 8px; /* Further reduced font size for very small screens */
+        font-size: 5px; /* Further reduced font size for very small screens */
     }
 
     .navbar-right, .navbar-left {
         padding: 5px 10px;
         position: absolute;
-        top: 12%;
+        top: 7%;
     }
 
     .navbar-left, .navbar-right {
@@ -572,11 +430,11 @@ footer {
     }
 
     .nav-links li {
-        margin: 0 15px; /* Reduce spacing between items */
+        margin: 0 10px; /* Reduce spacing between items */
     }
 
     .nav-links li a {
-        font-size: 8px;
+        font-size: 5px;
     }
 
     .nav-links li .language a{
@@ -585,22 +443,22 @@ footer {
     }
 
     .language{
-        font-size: 8px;
+        font-size: 5px;
     }
 
     .logo img {
-        width: 40px;
+        width: 30px;
     }
 
     .image {
         position: absolute;
-        top: 100px;
+        top: 70px;
     }
 
     .collaboration {
         position: absolute;
-        top: 350px;
-        font-size: 14px; /* Smaller font size for very small screens */
+        top: 250px;
+        font-size: 13px; /* Smaller font size for very small screens */
     }
 
     .collaboration::after {
@@ -610,26 +468,25 @@ footer {
     }
 
     .paragraph {
-        font-size: 9px; /* Smaller font size for very small screens */
-        top: 80%; /* Adjust vertical positioning */
+        font-size: 7px; /* Smaller font size for very small screens */
+        top: 48%; /* Adjust vertical positioning */
         width: 80%; /* Adjust width to fit within smaller screens */
     }
 
-    
     .keys {
-        width: 25%; /* Set the width to 20% */
+        width: 20%; /* Set the width to 20% */
         margin: 130px auto 0 auto; /* Move .keys down */
     }
     
     .keys1 {
-        width: 25%; /* Set the width to 20% */
+        width: 20%; /* Set the width to 20% */
         margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
     }
     
     .keys2 {
         display: block; /* Make the image behave like a block-level element */
         margin: 20px auto 0 auto; /* Center the image horizontally */
-        width: 25%; /* Set the width to 20% of the container */
+        width: 20%; /* Set the width to 20% of the container */
     }
 
     .heading1 {
@@ -637,7 +494,7 @@ footer {
     }
 
     .features {
-        font-size: 17px; /* Reduce font size for smaller screens */
+        font-size: 13px; /* Reduce font size for smaller screens */
     }
 
     .cards img {
@@ -652,7 +509,7 @@ footer {
     .btn {
         width: auto; /* Adjust width to fit content */
         max-width: 150px; /* Set a maximum width to prevent it from being too wide */
-        top: 424%; /* Adjust as needed for vertical centering */
+        top: 260%; /* Adjust as needed for vertical centering */
         padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
         font-size: 7px; /* Adjust font size to fit the smaller button */
         border-radius: 0.25rem; /* Reduce border radius for a smaller button */
@@ -660,284 +517,407 @@ footer {
 
     .image1 {
         position: absolute;
-        top: 440%;
+        top: 264%;
         width: 100%;
     }
 
     .image2{
         position: absolute;
-        top:450%;
+        top:277%;
         height: 300px;
         width: 220px;
-        left: 120px;
-    }
-    
-    .image3{
-        position:absolute;
-        top: 448%;
-        width: 200px;
-        left: 130px;
-    }
-
-    .image4 {
-        top: 515%;
-        margin-left: 15%;
-        width: 70%;
-    }
-
-    footer {
-        margin-top: 165%;
-    }
-
-  
-}
-
-@media screen and (min-width:576px) {
-    .banner {
-        height: 50px; /* Adjust height for better proportion */
-    }
-
-    .banner-text {
-        font-size: 10px; /* Further reduced font size for very small screens */
-    }
-
-    .navbar-right, .navbar-left {
-        padding: 5px 10px;
-        position: absolute;
-        top: 12%;
-    }
-
-    .navbar-left, .navbar-right {
-        flex-direction: row; /* Ensure items stay in a row */
-        flex-wrap: nowrap; /* Prevent wrapping */
-    }
-
-    .nav-links li {
-        margin: 0 17px; /* Reduce spacing between items */
-    }
-
-    .nav-links li a {
-        font-size: 12px;
-    }
-
-    .nav-links li .language a{
-        position: absolute;
-        top: 10%;
-    }
-
-    .language{
-        font-size: 12px;
-    }
-
-    .logo img {
-        width: 40px;
-    }
-
-    .image {
-        position: absolute;
-        top: 100px;
-    }
-
-    .collaboration {
-        position: absolute;
-        top: 400px;
-        font-size: 17px; /* Smaller font size for very small screens */
-    }
-
-    .collaboration::after {
-        bottom: -16px; /* Adjust spacing for smaller screens */
-        width: 55%; /* Further reduce the width of the line */
-        height: 4px; /* Reduce the height of the line */
-    }
-
-    .paragraph {
-        font-size: 11px; /* Smaller font size for very small screens */
-        top: 90%; /* Adjust vertical positioning */
-        width: 80%; /* Adjust width to fit within smaller screens */
-    }
-
-    
-    .keys {
-        width: 25%; /* Set the width to 20% */
-        margin: 130px auto 0 auto; /* Move .keys down */
-    }
-    
-    .keys1 {
-        width: 25%; /* Set the width to 20% */
-        margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
-    }
-    
-    .keys2 {
-        display: block; /* Make the image behave like a block-level element */
-        margin: 20px auto 0 auto; /* Center the image horizontally */
-        width: 25%; /* Set the width to 20% of the container */
-    }
-
-    .heading1 {
-        margin-top: 50px; /* Adjust top margin for smaller screens */
-    }
-
-    .features {
-        font-size: 20px; /* Reduce font size for smaller screens */
-    }
-
-    .cards img {
-        width: 50%; /* Make each image take 100% of its container's width */
-    }
-
-    .caterings {
-        font-size: 17px; /* Set the font size to 30px */
-        margin-top: 70px;
-    }
-
-    .btn {
-        width: auto; /* Adjust width to fit content */
-        max-width: 150px; /* Set a maximum width to prevent it from being too wide */
-        top: 520%; /* Adjust as needed for vertical centering */
-        padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
-        font-size: 7px; /* Adjust font size to fit the smaller button */
-        border-radius: 0.25rem; /* Reduce border radius for a smaller button */
-    }
-
-    .image1 {
-        position: absolute;
-        top: 550%;
-        width: 100%;
-    }
-
-    .image2{
-        position: absolute;
-        top:560%;
-        height: 300px;
-        width: 220px;
-        left: 170px;
-    }
-    
-    .image3{
-        position:absolute;
-        top: 558%;
-        width: 200px;
-        left: 180px;
-    }
-
-    .image4 {
-        top: 622%;
-        margin-left: 25%;
-        width: 60%;
-    }
-
-    footer {
-        margin-top: 140%;
-    }
-
-  
-}
-
-@media screen and (min-width:768px) {
-
-    .navbar-right, .navbar-left {
-        padding: 5px 10px;
-        position: absolute;
-        top: 12%;
-    }
-
-    .navbar-left, .navbar-right {
-        flex-direction: row; /* Ensure items stay in a row */
-        flex-wrap: nowrap; /* Prevent wrapping */
-    }
-
-    .nav-links li {
-        margin: 0 26px; /* Reduce spacing between items */
-    }
-
-    .nav-links li a {
-        font-size: 14px;
-    }
-
-    .nav-links li .language a{
-        position: absolute;
-        top: 10%;
-    }
-
-    .language{
-        font-size: 14px;
-    }
-
-    .collaboration {
-        position: absolute;
-        top: 500px;
-        font-size: 20px; /* Smaller font size for very small screens */
-    }
-
-    .collaboration::after {
-        bottom: -16px; /* Adjust spacing for smaller screens */
-        width: 55%; /* Further reduce the width of the line */
-        height: 4px; /* Reduce the height of the line */
-    }
-
-    .paragraph {
-        font-size: 14px; /* Smaller font size for very small screens */
-        top: 110%; /* Adjust vertical positioning */
-        width: 80%; /* Adjust width to fit within smaller screens */
-    }
-
-    .heading1 {
-        margin-top: 50px; /* Adjust top margin for smaller screens */
-    }
-
-    .features {
-        font-size: 24px; /* Reduce font size for smaller screens */
-    }
-
-    .caterings {
-        font-size: 24px; /* Set the font size to 30px */
-        margin-top: 70px;
-    }
-
-    .btn {
-        width: auto; /* Adjust width to fit content */
-        max-width: 200px; /* Increase the maximum width to make the button larger */
-        top: 536%; /* Adjust as needed for vertical positioning */
-        padding: 1rem 2rem; /* Increase padding for a larger button */
-        font-size: 12px; /* Increase font size for better readability */
-        border-radius: 0.5rem; /* Increase border radius for a more rounded button */
-    }
-
-    .image1 {
-        position: absolute;
-        top: 570%;
-        width: 100%;
-    }
-
-    .image2{
-        position: absolute;
-        top:600%;
-        height: 360px;
-        width: 240px;
         left: 50px;
     }
     
     .image3{
         position:absolute;
-        top: 600%;
-        width: 230px;
-        left: 55px;
+        top: 275%;
+        width: 200px;
+        left: 60px;
     }
 
     .image4 {
-        top: 600%;
-        margin-left: 50%;
-        width: 50%;
+        top: 329%;
+        margin-left: 15%;
+        width: 70%;
     }
 
     footer {
-        margin-top: 105%;
+        margin-top: 225%;
     }
+          
     
+}
+
+/*MEDIA QUERIES FOR MEDIUM SCREENS*/
+@media screen and (min-width:450px) {
+
+.banner {
+    height: 50px; /* Adjust height for better proportion */
+}
+
+.banner-text {
+    font-size: 8px; /* Further reduced font size for very small screens */
+}
+
+.navbar-right, .navbar-left {
+    padding: 5px 10px;
+    position: absolute;
+    top: 12%;
+}
+
+.navbar-left, .navbar-right {
+    flex-direction: row; /* Ensure items stay in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Reduce spacing between items */
+}
+
+.nav-links li a {
+    font-size: 8px;
+}
+
+.nav-links li .language a{
+    position: absolute;
+    top: 10%;
+}
+
+.language{
+    font-size: 8px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.image {
+    position: absolute;
+    top: 100px;
+}
+
+.collaboration {
+    position: absolute;
+    top: 350px;
+    font-size: 14px; /* Smaller font size for very small screens */
+}
+
+.collaboration::after {
+    bottom: -16px; /* Adjust spacing for smaller screens */
+    width: 55%; /* Further reduce the width of the line */
+    height: 4px; /* Reduce the height of the line */
+}
+.keys {
+    width: 20%; /* Set the width to 20% */
+    margin: 145px auto 0 auto; /* Move .keys down */
+}
+
+.keys1 {
+    width: 20%; /* Set the width to 20% */
+    margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+}
+
+.keys2 {
+    display: block; /* Make the image behave like a block-level element */
+    margin: 20px auto 0 auto; /* Center the image horizontally */
+    width: 20%; /* Set the width to 20% of the container */
+}
+
+.paragraph {
+    font-size: 9px; /* Smaller font size for very small screens */
+    top: 72%; /* Adjust vertical positioning */
+    width: 80%; /* Adjust width to fit within smaller screens */
+}
+.btn {
+    width: auto; /* Adjust width to fit content */
+    max-width: 150px; /* Set a maximum width to prevent it from being too wide */
+    top: 408%; /* Adjust as needed for vertical centering */
+    padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
+    font-size: 7px; /* Adjust font size to fit the smaller button */
+    border-radius: 0.25rem; /* Reduce border radius for a smaller button */
+}
+footer {
+    margin-top: 225%;
+}
+.image1 {
+    position: absolute;
+    top: 433%;
+    width: 100%;
+}
+
+.image2{
+    position: absolute;
+    top:438%;
+    height: 300px;
+    width: 220px;
+    left: 101px;
+}
+
+.image3{
+    position:absolute;
+    top: 437%;
+    width: 200px;
+    left: 108px;
+}
+
+.image4 {
+    top: 492%;
+    margin-left: 18%;
+    width: 70%;
+}
+
+
+  
+
+}
+@media screen and (min-width:576px) {
+.banner {
+    height: 50px; /* Adjust height for better proportion */
+}
+
+.banner-text {
+    font-size: 10px; /* Further reduced font size for very small screens */
+}
+
+.navbar-right, .navbar-left {
+    padding: 5px 10px;
+    position: absolute;
+    top: 12%;
+}
+
+.navbar-left, .navbar-right {
+    flex-direction: row; /* Ensure items stay in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.nav-links li {
+    margin: 0 17px; /* Reduce spacing between items */
+}
+
+.nav-links li a {
+    font-size: 12px;
+}
+
+.nav-links li .language a{
+    position: absolute;
+    top: 10%;
+}
+
+.language{
+    font-size: 12px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.image {
+    position: absolute;
+    top: 100px;
+}
+
+.collaboration {
+    position: absolute;
+    top: 400px;
+    font-size: 17px; /* Smaller font size for very small screens */
+}
+
+.collaboration::after {
+    bottom: -16px; /* Adjust spacing for smaller screens */
+    width: 55%; /* Further reduce the width of the line */
+    height: 4px; /* Reduce the height of the line */
+}
+
+.paragraph {
+    font-size: 11px; /* Smaller font size for very small screens */
+    top: 77%; /* Adjust vertical positioning */
+    width: 80%; /* Adjust width to fit within smaller screens */
+}
+
+
+.keys {
+    width: 25%; /* Set the width to 20% */
+    margin: 130px auto 0 auto; /* Move .keys down */
+}
+
+.keys1 {
+    width: 25%; /* Set the width to 20% */
+    margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+}
+
+.keys2 {
+    display: block; /* Make the image behave like a block-level element */
+    margin: 20px auto 0 auto; /* Center the image horizontally */
+    width: 25%; /* Set the width to 20% of the container */
+}
+
+.heading1 {
+    margin-top: 50px; /* Adjust top margin for smaller screens */
+}
+
+.features {
+    font-size: 20px; /* Reduce font size for smaller screens */
+}
+
+.cards img {
+    width: 50%; /* Make each image take 100% of its container's width */
+}
+
+.caterings {
+    font-size: 17px; /* Set the font size to 30px */
+    margin-top: 70px;
+}
+
+.btn {
+    width: auto; /* Adjust width to fit content */
+    max-width: 150px; /* Set a maximum width to prevent it from being too wide */
+    top: 438%; /* Adjust as needed for vertical centering */
+    padding: 0.5rem 1rem; /* Reduce padding for a smaller button */
+    font-size: 7px; /* Adjust font size to fit the smaller button */
+    border-radius: 0.25rem; /* Reduce border radius for a smaller button */
+}
+
+.image1 {
+    position: absolute;
+    top: 442%;
+    width: 100%;
+}
+
+.image2{
+    position: absolute;
+    top:446%;
+    height: 300px;
+    width: 220px;
+    left: 170px;
+}
+
+.image3{
+    position:absolute;
+    top: 444%;
+    width: 200px;
+    left: 180px;
+}
+
+.image4 {
+    top: 499%;
+    margin-left: 25%;
+    width: 60%;
+}
+
+footer {
+    margin-top: 140%;
+}
+
+
+}
+
+@media screen and (min-width:768px) {
+
+.navbar-right, .navbar-left {
+    padding: 5px 10px;
+    position: absolute;
+    top: 12%;
+}
+
+.navbar-left, .navbar-right {
+    flex-direction: row; /* Ensure items stay in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.nav-links li {
+    margin: 0 26px; /* Reduce spacing between items */
+}
+
+.nav-links li a {
+    font-size: 14px;
+}
+
+.nav-links li .language a{
+    position: absolute;
+    top: 10%;
+}
+
+.language{
+    font-size: 14px;
+}
+
+.collaboration {
+    position: absolute;
+    top: 500px;
+    font-size: 20px; /* Smaller font size for very small screens */
+}
+
+.collaboration::after {
+    bottom: -16px; /* Adjust spacing for smaller screens */
+    width: 55%; /* Further reduce the width of the line */
+    height: 4px; /* Reduce the height of the line */
+}
+
+.paragraph {
+    font-size: 14px; /* Smaller font size for very small screens */
+    top: 110%; /* Adjust vertical positioning */
+    width: 80%; /* Adjust width to fit within smaller screens */
+}
+
+.heading1 {
+    margin-top: 50px; /* Adjust top margin for smaller screens */
+}
+
+.features {
+    font-size: 24px; /* Reduce font size for smaller screens */
+}
+
+.caterings {
+    font-size: 24px; /* Set the font size to 30px */
+    margin-top: 70px;
+}
+
+.btn {
+    width: auto; /* Adjust width to fit content */
+    max-width: 200px; /* Increase the maximum width to make the button larger */
+    top: 536%; /* Adjust as needed for vertical positioning */
+    padding: 1rem 2rem; /* Increase padding for a larger button */
+    font-size: 12px; /* Increase font size for better readability */
+    border-radius: 0.5rem; /* Increase border radius for a more rounded button */
+}
+
+.image1 {
+    position: absolute;
+    top: 570%;
+    width: 100%;
+}
+
+.image2{
+    position: absolute;
+    top:600%;
+    height: 360px;
+    width: 240px;
+    left: 50px;
+}
+
+.image3{
+    position:absolute;
+    top: 600%;
+    width: 230px;
+    left: 55px;
+}
+
+.image4 {
+    top: 600%;
+    margin-left: 50%;
+    width: 50%;
+}
+
+footer {
+    margin-top: 105%;
+}
+
 }
 
 /*MEDIA SCREENS FOR LARGE DEVICES*/
 
+<<<<<<< HEAD
 @media screen and (min-width:1150px) {
 
     .banner {
@@ -1398,5 +1378,7 @@ footer {
     
 
 
+=======
+>>>>>>> 9950a48218ff5f5565d74b623a70b8962e55af9b
 
 

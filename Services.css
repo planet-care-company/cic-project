@@ -937,3 +937,466 @@ footer {
 }
 
 /*MEDIA SCREENS FOR LARGE DEVICES*/
+
+@media screen and (min-width:1150px) {
+
+    .banner {
+        width: 100%;
+    }
+    
+    .banner-text {
+        font-size: 11px;
+    }
+    
+    .navbar-right, .navbar-left {
+        padding: 10px 20px;
+        display: flex;
+        position: absolute;
+        top: 10%;
+    }
+    
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 60px; /* Add spacing between items */
+    }
+    
+    
+    .nav-links li a:hover::after {
+        width: 100%; 
+    }
+    
+    .nav-links li.logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-links li.logo + li {
+        margin-right: 20px;
+    }
+    
+    
+    .logo img {
+      width: 60px;
+    }
+
+    .image {
+        position: absolute;
+        top: 120px;
+        left: 65%;
+    }
+    
+    
+    .collaboration {
+        position: absolute;
+        top: 130%;
+        font-size: 30px;
+    }
+    
+    
+    .paragraph {
+        font-size: 20px;
+        position: absolute;
+        top: 145%;
+    }
+    
+    .keys {
+        width: 20%; /* Set the width to 20% */
+        margin: 300px auto 0 auto; /* Move .keys down */
+    }
+    
+    .keys1 {
+        width: 20%; /* Set the width to 20% */
+        margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+    }
+    
+    .keys2 {
+        margin: 0 auto; /* Center the image horizontally */
+        width: 20%; /* Set the width to 20% of the container */
+    }
+    
+    .heading1 {
+        margin-top: 70px;
+    }
+    
+    .features {
+        text-align: center; /* Center the text within the h2 element */
+        font-size: 30px; /* Set the font size to 30px */
+    }
+    
+    .cards {
+        padding: 20px; /* Optional padding around the content */
+    }
+    
+    .cards img {
+        width: 100%; /* Make each image take 100% of its container's width */
+        margin: 10px; /* Add space around each image */
+    }
+    
+    .caterings {
+        font-size: 30px; /* Set the font size to 30px */
+        margin: 0 auto; /* Center the element within its container if it has a width */
+        margin-top: 70px;
+    }
+    
+    .btn{
+        width: 20%;
+        position: absolute;
+        top: 520%; /* Centers vertically */
+        padding: 1rem 2rem;
+    }
+    
+    .image1 {
+        /* Position the container */
+        position: absolute;
+        top: 570%;
+        width: 100%;
+    }
+    
+    
+    .image2{
+        position: absolute;
+        top:585%;
+        height: 500px;
+        width: 400px;
+        left: 30px;
+    }
+    
+    .image3{
+        position:absolute;
+        top: 581.5%;
+        width: 340px;
+        left: 58px;
+    }
+     
+    .image4{
+        position: absolute;
+        top: 580%;
+        margin-left: 50%;
+        width: 50%;
+    }
+    
+    footer {
+        margin-top: 81%;
+    }
+    
+}
+
+@media screen and (min-width:1220px) {
+
+    .banner {
+        width: 100%;
+    }
+    
+    
+    .banner-text {
+        font-size: 11px;
+    }
+    
+    .navbar-right, .navbar-left {
+        padding: 10px 20px;
+        position: absolute;
+        top: 10%;
+    }
+    
+    
+    .nav-links li {
+        margin: 0 60px; /* Add spacing between items */
+    }
+    
+    
+    .nav-links li.logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-links li.logo + li {
+        margin-right: 20px;
+    }
+    
+    .logo img {
+      margin-top: 10px;
+      width: 60px;
+    }
+
+    .image {
+        position: absolute;
+        top: 120px;
+        left: 65%;
+    }
+    
+    .collaboration {
+        position: absolute;
+        top: 130%;
+    }
+    
+    .paragraph {
+        font-size: 20px;
+        position: absolute;
+        top: 150%;
+    }
+    
+    .keys {
+        width: 20%; /* Set the width to 20% */
+        margin: 300px auto 0 auto; /* Move .keys down */
+    }
+    
+    .keys1 {
+        width: 20%; /* Set the width to 20% */
+        margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+    }
+    
+    .keys2 {
+        margin: 0 auto; /* Center the image horizontally */
+        width: 20%; /* Set the width to 20% of the container */
+    }
+    
+    .heading1 {
+        margin-top: 70px;
+    }
+    
+    .features {
+        text-align: center; /* Center the text within the h2 element */
+        font-size: 30px; /* Set the font size to 30px */
+    }
+    
+    
+    .cards img {
+        width: 100%; /* Make each image take 100% of its container's width */
+        margin: 10px; /* Add space around each image */
+    }
+    
+    .caterings {
+        font-size: 30px; /* Set the font size to 30px */
+        margin: 0 auto; /* Center the element within its container if it has a width */
+        margin-top: 70px;
+    }
+    
+    .btn{
+        width: 20%;
+        position: absolute;
+        top: 500%; /* Centers vertically */
+        padding: 1rem 2rem;
+    }
+    
+    
+    .image1 {
+ /* Position the container */
+        position: absolute;
+        top: 540%;
+        width: 100%;
+    }
+    
+    
+    .image2{
+        position: absolute;
+        top:555%;
+        height: 500px;
+        width: 400px;
+        left: 30px;
+    }
+    
+    .image3{
+        position:absolute;
+        top: 551.5%;
+        width: 340px;
+        left: 58px;
+    }
+     
+    
+    .image4{
+        position: absolute;
+        top: 550%;
+        margin-left: 50%;
+        width: 50%;
+    }
+    
+    footer {
+        margin-top: 72%;
+    }
+    
+    
+}
+
+@media screen and (min-width:1440px) {
+
+    .banner {
+        width: 100%;
+    }
+    
+    .banner-text {
+        font-size: 13px;
+    }
+    
+    .navbar-right, .navbar-left {
+        padding: 10px 20px;
+        position: absolute;
+        top: 10%;
+    }
+
+    .nav-links li a {
+        font-size: 17px;
+    }
+
+    .nav-links li .language a{
+        position: absolute;
+        top: 10%;
+    }
+
+    .language{
+        font-size: 17px;
+    }
+    
+    
+    .nav-links {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 60px; /* Add spacing between items */
+    }
+    
+
+    
+    .logo img {
+      margin-top: 10px;
+      width: 80px;
+      height: auto;
+      position: relative;
+      left: 50%;
+    }
+    
+    .image {
+        position: absolute;
+        top: 120px;
+        left: 65%;
+    }
+    
+    
+    
+    .collaboration {
+        position: absolute;
+        top: 122%;
+        font-size: 32px;
+    }
+    
+    
+    .collaboration::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%; /* Center the line */
+        bottom: -50px;
+        width: 50%; /* Set the width of the line to half of the element's width */
+        height: 7px;
+    }
+    
+    .paragraph {
+        font-size: 22px;
+        position: absolute;
+        top: 141%;
+        text-align: center;
+        margin: 0 auto; /* Ensure margins don't offset centering */
+        width: 74%; /* Adjust width to fit within smaller screens */
+    }
+    
+    .keys {
+        width: 20%; /* Set the width to 20% */
+        margin: 300px auto 0 auto; /* Move .keys down */
+    }
+    
+    .keys1 {
+        width: 20%; /* Set the width to 20% */
+        margin: 20px auto 0 auto; /* Reduce space between .keys and .keys1 */
+    }
+    
+    .keys2 {
+        margin: 0 auto; /* Center the image horizontally */
+        width: 20%; /* Set the width to 20% of the container */
+    }
+    
+    .heading1 {
+        margin-top: 70px;
+    }
+    
+    .features {
+        font-size: 30px; /* Set the font size to 30px */
+    }
+    
+    
+    .caterings {
+        font-size: 30px; /* Set the font size to 30px */
+        margin: 0 auto; /* Center the element within its container if it has a width */
+        margin-top: 70px;
+    }
+    
+    .btn{
+        width: 20%;
+        position: absolute;
+        top: 455%; /* Centers vertically */
+        left: 50%; /* Centers horizontally */
+        transform: translate(-50%, -50%); 
+        padding: 1rem 2rem;
+    }
+
+    
+    .image1 {
+        /* Position the container */
+        position: absolute;
+        top: 490%;
+        width: 100%;
+    }
+    
+    
+    .image2{
+        position: absolute;
+        top:505%;
+        height: 500px;
+        width: 400px;
+        left: 30px;
+    }
+    
+    .image3{
+        position:absolute;
+        top: 502%;
+        width: 340px;
+        left: 58px;
+    }
+     
+    .image4{
+        position: absolute;
+        top: 498%;
+        margin-left: 50%;
+        width: 40%;
+    }
+    
+    footer {
+        margin-top: 61%;
+    }
+
+    
+    
+}
+
+
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
